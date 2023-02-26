@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-color:#622fd3;
+  --global-padding:0 25rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-display: swap;
+  font-family: "Integral ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/public/fonts/IntegralCF-ExtraBold.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Integral Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/public/fonts/IntegralCF-Regular.woff2")
+    format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Integral Regular";
+  /* background-color: var(--main-color); */
+  background-color: #0d0d0d;
+}
+
+
+
+h1,h2,h3,h4 {
+  font-family: "Integral ExtraBold";
+}
+
+a {
+  color: inherit;
+  font-family: "Integral Regular";
+  text-decoration: none;
+}
+button{
+  font-family: "Integral Regular";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.firebase-emulator-warning{
+  display: none;
+}
+
+
+@media (max-width: 1700px) {
+  
+  :root {
+    --global-padding:0 15rem;
+  }
+
+
+}
+@media (max-width: 1300px) {
+  
+  :root {
+    --global-padding:0 10rem;
+  }
+
+
+}
+@media (max-width: 1024px) {
+  
+  :root {
+    --global-padding:0 2rem;
+  }
+
+}
+
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: .1rem;
+  /* font-weight: 700!important; */
+  cursor: pointer;
+  transition: 300ms;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border: none;
+}
+
+.btn.small{
+  padding: 0.5rem 1rem;
+  font-size: smaller;
+}
+
+
+.btn--primary {
+  color: white;
+background-color: black;
+}
+
+
+.btn--secondary {
+  background-color:transparent;
+color: black;
+}
+
+
+.footer_content{
+  border-top: 1px #0000002e solid!important;
+  background-color: white;
+  /* padding:5rem 15rem; */
+}
+
+
+.btn--primary.light{
+  background-color: #fff;
+  color:black;
+  border:2px #fff solid;
+}
+
+.btn--secondary.light{
+  /* background-color: #e6e4e4; */
+  color:white;
+  border:2px #fff solid;
+}
+
+.dashboard-selected {
+  background-color: #622fd3;
+  border: none;
+}
+
+.dashboard-light {
+  background-color: #efefef;
+  border:1px solid #e0e0e0;
+  /* border: none; */
+  color: black;
 }

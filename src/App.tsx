@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ProjectList from "./pages/projects/ProjectList";
+import ContextContainer from "./components/ContextContainer";
+import Navbar from "./components/Navbar";
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
+import HomepageHero from "./pages/homepage/HomepageHero";
+import ErrorPage from "./components/ErrorPage";
+import ContactForm from "./pages/contact/ContactForm";
+import ServicesSection from "./pages/services/ServicesSection";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContextContainer>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomepageHero />} />
+            <Route path="/projects" element={<ProjectList />} />
+            <Route path="/services" element={<ServicesSection />} />
+            <Route path="/contact" element={<ContactForm />} />
+          </Routes>
+        </BrowserRouter>
+      </ContextContainer>
     </div>
   );
 }
