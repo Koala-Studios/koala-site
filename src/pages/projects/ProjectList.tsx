@@ -57,7 +57,7 @@ const ProjectList = () => {
     >
       <Scroll>
         {
-          projects.map((project, i) => <ProjectItem logo_color={project.logo_color} logo={project.logo} index={i} obj={geometry} key={i} xpos={i * xW} scale={[w, 4, 3]} url={project.list_image} />) /* prettier-ignore */
+          projects.map((project, i) => <ProjectItem handle={project.handle} logo_color={project.logo_color} logo={project.logo} index={i} obj={geometry} key={i} xpos={i * xW} scale={[w, 4, 3]} url={project.list_image} />) /* prettier-ignore */
         }
       </Scroll>
     </ScrollControls>

@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
-import ImageWithText from "../../components/ImageWithText";
-import StandaloneImage from "../../components/StandaloneImage";
+import ImageWithText from "../../components/sections/ImageWithText";
+import StandaloneImage from "../../components/sections/StandaloneImage";
 
 const ServicesSection = () => {
   return (

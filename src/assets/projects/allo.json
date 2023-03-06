@@ -1,0 +1,13 @@
+{
+    "handle":"allo",
+    "next_handle":"stlth",
+    "title":"ALLO",
+    "list_image":"/images/project/allo_list.png",
+    "logo":"/images/project/logos/allo_logo.png",
+    "description":"adifsod",
+    "color1":"#191613",
+    "color2":"#fff",
+    "logo_color":"#d4a363",
+    "hero_image":"/images/project/allo/vanilla_and_tubs_wide.png",
+    "chips":[1,2]
+}

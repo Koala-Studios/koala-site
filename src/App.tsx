@@ -15,6 +15,7 @@ import HomepageHero from "./pages/homepage/HomepageHero";
 import ErrorPage from "./components/ErrorPage";
 import ContactForm from "./pages/contact/ContactForm";
 import ServicesSection from "./pages/services/ServicesSection";
+import AlloPage from "./pages/projects/allo/AlloPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomepageHero />} />
             <Route path="/projects" element={<ProjectList />} />
+            <Route path="/projects/allo" element={<AlloPage />} />
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>

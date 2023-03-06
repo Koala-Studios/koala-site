@@ -4,6 +4,9 @@ import React, { useEffect, useRef } from "react";
 import gsap, { Power2, Back } from "gsap";
 import { Mesh, Vector3 } from "three";
 import { damp } from "three/src/math/MathUtils";
+import { useNavigate } from 'react-router-dom';
+
+
 
 interface Props {
   xpos: number;
@@ -13,6 +16,7 @@ interface Props {
   logo: string;
   obj: any;
   logo_color: string;
+  handle:string;
 }
 let startAnimDone = false;
 
@@ -24,7 +28,9 @@ const ProjectItem: React.FC<Props> = ({
   obj,
   index,
   logo_color,
+  handle
 }) => {
+  const navigate = useNavigate();
   const ref =
     useRef<Mesh<THREE.BufferGeometry, THREE.Material | THREE.Material[]>>();
   const refText =
@@ -106,6 +112,10 @@ const ProjectItem: React.FC<Props> = ({
     });
     document.body.style.cursor = "initial";
   };
+  const handlePointerDown = () => {
+    navigate(handle)
+
+  };
 
   const handleAwake = () => {
     console.log("hello");
@@ -134,6 +144,7 @@ const ProjectItem: React.FC<Props> = ({
         onPointerEnter={handlePointerEnter}
         onPointerLeave={handlePointerLeave}
         onPointerMove={handlePointerMove}
+        onPointerDown={handlePointerDown}
         geometry={obj}
         //@ts-ignore
         scale={scale}

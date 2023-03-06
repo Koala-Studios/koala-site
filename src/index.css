@@ -1,6 +1,7 @@
 :root {
   --main-color:#622fd3;
   --global-padding:0 25rem;
+  --global-padding-single:25rem;
 }
 
 @font-face {
@@ -57,6 +58,7 @@ button{
   
   :root {
     --global-padding:0 15rem;
+    --global-padding-single:15rem;
   }
 
 
@@ -65,6 +67,7 @@ button{
   
   :root {
     --global-padding:0 10rem;
+    --global-padding-single:10rem;
   }
 
 
@@ -73,6 +76,7 @@ button{
   
   :root {
     --global-padding:0 2rem;
+    --global-padding-single:2rem;
   }
 
 }
