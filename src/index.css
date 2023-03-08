@@ -142,3 +142,13 @@ color: black;
   /* border: none; */
   color: black;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgb(99, 99, 99);
+  padding: 2;
+}

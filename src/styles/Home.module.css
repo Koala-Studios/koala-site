@@ -1,0 +1,142 @@
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  /* margin-top: 55px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  overflow-x: hidden;
+}
+
+.hero_section{
+
+}
+
+.title {
+  /* margin: 0; */
+  line-height: 0.85;
+  font-size: 5.5rem;
+  word-wrap: none;
+  color: white;
+  text-shadow: 0px 5px 20px #869da794;
+}
+
+
+.description {
+  margin: 2rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.hero_container{
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* background-color: var(--main-color); */
+  padding: 0;
+  margin:0;
+}
+
+.hero_section{
+  position: relative;
+}
+
+.hero_content{
+  z-index: 2;
+}
+.hero_ctas{
+  width: 100%;
+  z-index: 2;
+  display: flex;
+}
+.hero_ctas a{
+  margin-right: 2rem;
+}
+
+
+.hero_flower_1{
+  position: absolute;
+  bottom:15%;
+}
+
+.hero_content{
+  padding:var(--global-padding);
+
+}
+
+.hero_video{
+  position: absolute;
+  /* right:10%; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+.hero_flower_1:hover{
+  transform: rotate(5deg);
+}
+
+
+@media (max-width: 1024px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-top:20px;
+  }
+  .hero_content{
+    width: 100%;
+    padding:5rem 0;
+
+    text-align: center;
+  }
+
+  .hero_container{
+    align-items:initial;
+    justify-content: center;
+  }
+
+  .hero_ctas{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* .contact_btn{
+    display: none;
+  } */
+  .hero_ctas{
+    display: flex;
+    gap: 20px;
+  }
+  .hero_ctas a{
+    margin-right:0;
+  }
+
+  .hero_video{
+    justify-content: center;
+
+  }
+
+}

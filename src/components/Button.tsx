@@ -5,11 +5,22 @@ interface Props {
   type: "primary" | "secondary" | "primary light" | "secondary light";
   classes?: string;
   onClick?: any;
+  style?: React.CSSProperties;
 }
 
-const Button: React.FC<Props> = ({ children, type, classes, onClick }) => {
+const Button: React.FC<Props> = ({
+  style,
+  children,
+  type,
+  classes,
+  onClick,
+}) => {
   return (
-    <button onClick={onClick} className={`btn btn--${type} ${classes}`}>
+    <button
+      style={style}
+      onClick={onClick}
+      className={`btn btn--${type} ${classes}`}
+    >
       {children}
     </button>
   );

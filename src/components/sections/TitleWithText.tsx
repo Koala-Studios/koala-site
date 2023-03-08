@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Sections.module.css";
+import styles from "../../styles/Sections.module.css";
 interface Props {
   orientation: "vertical" | "horizontal";
   title: string;
