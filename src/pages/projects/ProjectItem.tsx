@@ -4,9 +4,7 @@ import React, { useEffect, useRef } from "react";
 import gsap, { Power2, Back } from "gsap";
 import { Mesh, Vector3 } from "three";
 import { damp } from "three/src/math/MathUtils";
-import { useNavigate } from 'react-router-dom';
-
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface Props {
   xpos: number;
@@ -16,7 +14,7 @@ interface Props {
   logo: string;
   obj: any;
   logo_color: string;
-  handle:string;
+  handle: string;
 }
 let startAnimDone = false;
 
@@ -28,9 +26,10 @@ const ProjectItem: React.FC<Props> = ({
   obj,
   index,
   logo_color,
-  handle
+  handle,
 }) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const ref =
     useRef<Mesh<THREE.BufferGeometry, THREE.Material | THREE.Material[]>>();
   const refText =
@@ -63,7 +62,8 @@ const ProjectItem: React.FC<Props> = ({
   };
 
   useEffect(() => {
-    if (ref.current && refText.current && startAnimDone === false) {
+    startAnimDone = false;
+    if (ref.current && refText.current) {
       gsap
         .timeline({
           onComplete: () => {
@@ -94,7 +94,7 @@ const ProjectItem: React.FC<Props> = ({
         })
         .delay(1.8 + 0.3 * index);
     }
-  }, []);
+  }, [location.key]);
 
   const handlePointerEnter = () => {
     //@ts-ignore
@@ -113,8 +113,7 @@ const ProjectItem: React.FC<Props> = ({
     document.body.style.cursor = "initial";
   };
   const handlePointerDown = () => {
-    navigate(handle)
-
+    navigate(handle);
   };
 
   const handleAwake = () => {

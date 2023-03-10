@@ -2,17 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import styles from "../../styles/Home.module.css";
-import "../../styles/homepage.css";
 
 const HomepageHero = () => {
   return (
     <div className={styles.hero_section}>
       <section className={styles.hero_container}>
         <div className={styles.hero_video}>
-          {/* <img src="/images/koala test2_ps.png" /> */}
-          <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
+          <img src="/images/koala_square.png" />
+          {/* <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
             <source src="/videos/koalavideo2_60fps.mp4" />
-          </video>
+          </video> */}
         </div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>
@@ -32,8 +31,9 @@ const HomepageHero = () => {
             <Link to="/projects">
               <Button
                 style={{
-                  color: "#597685",
-                  boxShadow: "0px 8px 10px 0 #7b8e95",
+                  backgroundColor: "#39744f",
+                  borderColor: "#39744f",
+                  color: "white",
                 }}
                 type="primary light"
               >

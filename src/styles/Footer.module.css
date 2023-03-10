@@ -1,11 +1,12 @@
 .footer_container{
     /* height: 20rem; */
     padding: var(--global-padding);
-    background-color: var(--main-color);
+    background-color: #0d0d0d;
     color: white;
     padding-top: 3rem;
     padding-bottom: 1rem;
-    border-top: 1px solid #7147E2;
+    text-align: left;
+    border-top: 1px solid #464548;
 }
 
 .contact_us{
@@ -38,7 +39,7 @@
 
 .footer_container hr{
     margin:2rem 0;
-    border: 1px solid #7147E2 
+    border: 1px #ffffff36 solid!important
 }
 
 

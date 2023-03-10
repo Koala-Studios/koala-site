@@ -9,21 +9,26 @@ interface Props {
   width: string;
   height: string;
   children?: any;
+  imgStyles?: any;
+  styles?: any;
+  textColor?: string;
 }
 
 const ImageWithText: React.FC<Props> = (props) => {
   return (
     <section
+      style={props.styles}
       className={`${styles.image_with_text_container} ${
         props.image_placement == "left" ? styles.left : ""
       }`}
     >
-      <div>
-        <h2>{props.title}</h2>
-        <p>{props.text}</p>
+      <div className={styles.image_with_text_info}>
+        <h2 style={{ color: props.textColor }}>{props.title}</h2>
+        <p style={{ color: props.textColor }}>{props.text}</p>
         {props.children}
       </div>
       <img
+        style={props.imgStyles}
         src={props.src}
         alt={props.alt}
         width={props.width}

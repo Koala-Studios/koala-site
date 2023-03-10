@@ -10,7 +10,7 @@ transform: rotate(-5deg);
 
 .navbar {
     /* background-color: var(--main-color); */
-    background-color: transparent;
+    background-color: #0d0d0d;
     z-index:14000;
     height: 65px;
     width: 100vw;
@@ -22,7 +22,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 transition: background-color 300ms ease;
-/* border-bottom: 1px #0000002e solid!important; */
+border-bottom: 1px #ffffff36 solid!important
 }
 
 .navbar.light{

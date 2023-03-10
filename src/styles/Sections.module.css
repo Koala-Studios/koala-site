@@ -2,14 +2,14 @@
     display:flex;
     justify-content: space-between;
     padding:var(--global-padding);
-    background-color: white;
+    /* background-color: white; */
     align-items: center;
     padding-top: 4rem!important;
     padding-bottom: 4rem!important;
     
 }
 .image_with_text_container div {
-    /* color:white; */
+    color:#ede7e0;
     /* padding:0 0 3rem; */
     /* max-width: 50rem; */
     max-width: 50%;
@@ -20,6 +20,19 @@
     margin:2rem 0;
 }
 
+.image_with_text_info{
+    text-align: left;
+}
+.image_with_text_info h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.image_with_text_info p{
+    margin-top: 1rem;
+    /* color: #000!important; */
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
 
 .image_with_text_container.left {
     flex-direction: row-reverse;
@@ -27,7 +40,7 @@
 
 .image_container {
     
-    background-color: white;
+    /* background-color: white; */
     padding:var(--global-padding);
     display: flex;
     /* margin-left: auto; */
@@ -48,9 +61,7 @@ border-radius: 2rem;
     padding:0;
 }
 .title_with_text {
-    /* color:white; */
-    background-color: white;
-    
+    color:white;
     padding: var(--global-padding);
 }
 .title_with_text div{
@@ -61,7 +72,7 @@ border-radius: 2rem;
 
 .next_project {
     
-    background-color: white;
+    /* background-color: white; */
 
     padding:4rem 0;
     display:flex;
@@ -69,6 +80,57 @@ border-radius: 2rem;
     align-items: center;
     gap:3rem
 
+}
+
+.scroll_text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    gap:2rem;
+    color: white;
+    font-size: 1rem;
+    /* padding: var(--global-padding); */
+    animation: scroll-left 35s linear infinite;
+}
+
+.scroll_text span{
+    /* display: inline-block; */
+}
+.scroll_text span::after{
+content: "●";
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+.scrolltext_container{
+    padding-top: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+/* 
+.scrolltext_container:nth-child(1){
+    animation: scroll-left 10s linear infinite;
+}
+.scrolltext_container:nth-child(2){
+    animation: scroll-left2 10s linear infinite;
+} */
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+}
+@keyframes scroll-left2 {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-100%, 0);
+      }
 }
 
 @media (max-width: 1024px) {

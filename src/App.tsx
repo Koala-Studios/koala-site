@@ -11,12 +11,12 @@ import {
   RouterProvider,
   Routes,
 } from "react-router-dom";
-import HomepageHero from "./pages/homepage/HomepageHero";
 import ErrorPage from "./components/ErrorPage";
 import ContactForm from "./pages/contact/ContactForm";
 import ServicesSection from "./pages/services/ServicesSection";
 import AlloPage from "./pages/projects/allo/AlloPage";
-
+import AboutPage from "./pages/about/AboutPage";
+import HomepagePage from "./pages/homepage/HomepagePage";
 function App() {
   return (
     <div className="App">
@@ -24,11 +24,12 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<HomepageHero />} />
+            <Route path="/" element={<HomepagePage />} />
             <Route path="/projects" element={<ProjectList />} />
             <Route path="/projects/allo" element={<AlloPage />} />
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/contact" element={<ContactForm />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </BrowserRouter>
       </ContextContainer>

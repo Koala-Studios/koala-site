@@ -17,10 +17,11 @@
 .title {
   /* margin: 0; */
   line-height: 0.85;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   word-wrap: none;
-  color: white;
-  text-shadow: 0px 5px 20px #869da794;
+  color: #ede7e0;
+  
+  text-align: start;
 }
 
 
@@ -28,7 +29,7 @@
   margin: 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-  color: white;
+  color: #ede7e0;
 }
 
 .code {
@@ -42,7 +43,7 @@
 
 .hero_container{
   position: relative;
-  height:100vh;
+  height:90vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -53,6 +54,8 @@
 
 .hero_section{
   position: relative;
+  background-color: #181A17;
+
 }
 
 .hero_content{
@@ -86,13 +89,56 @@
   overflow: hidden;
   z-index: 1;
   display: flex;
+  margin-top: -1rem;
   justify-content: flex-end;
 
 }
 
 
+
+.hero_video img{
+  border-bottom-left-radius: 4rem;
+}
+
 .hero_flower_1:hover{
   transform: rotate(5deg);
+}
+
+.box1_title{
+  font-size: 3rem!important;
+  text-align: left;
+  /* width: 40rem; */
+  line-height: 1.05;
+}
+.box2_title{
+  text-align: left;
+  /* width: 40rem; */
+  line-height: 1.05;
+  color: #282420;
+}
+.box2_title p {
+  color: #282420 !important;;
+}
+
+.box1_title span{
+  background: linear-gradient(to right, #9AADB5 0%,#9F90B9 30%,#DDBCC9 60%, #C7B698 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -105,6 +151,7 @@
   .title {
     font-size: 3rem;
     margin-top:20px;
+    text-align: center;
   }
   .hero_content{
     width: 100%;
@@ -116,6 +163,7 @@
   .hero_container{
     align-items:initial;
     justify-content: center;
+    height: 100vh;
   }
 
   .hero_ctas{
@@ -136,7 +184,7 @@
 
   .hero_video{
     justify-content: center;
-
+    margin-top: 0;
   }
 
 }

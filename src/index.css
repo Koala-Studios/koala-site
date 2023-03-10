@@ -1,7 +1,7 @@
 :root {
   --main-color:#622fd3;
-  --global-padding:0 25rem;
-  --global-padding-single:25rem;
+  --global-padding:0 20rem;
+  --global-padding-single:20rem;
 }
 
 @font-face {
@@ -57,8 +57,8 @@ button{
 @media (max-width: 1700px) {
   
   :root {
-    --global-padding:0 15rem;
-    --global-padding-single:15rem;
+    --global-padding:0 12rem;
+    --global-padding-single:12rem;
   }
 
 
@@ -91,8 +91,21 @@ button{
   align-items: center;
   display: flex;
   gap: 10px;
-  border: none;
+  border: none; 
+  /* perspective:1px; */
 }
+.btn span{
+  transition: 300ms;
+  /* backface-visibility: hidden; */
+}
+.btn:hover {
+  transform: scaleX(1.1);
+}
+.btn:hover span{
+  transform: scaleX(0.91) ;
+}
+
+
 
 .btn.small{
   padding: 0.5rem 1rem;
