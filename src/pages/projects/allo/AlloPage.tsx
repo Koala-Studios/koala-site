@@ -1,5 +1,6 @@
 import React from "react";
 import project from "../../../assets/projects/allo.json";
+import ImageWithText from "../../../components/sections/ImageWithText";
 import ProjectHero from "../../../components/sections/ProjectHero";
 import TitleWithText from "../../../components/sections/TitleWithText";
 
@@ -14,6 +15,14 @@ const AlloPage = () => {
         title={"dasfdaas dfd fassdfsf"}
         text={"asdfadasdfdaasdfasdffdassfadsfasds"}
       />
+      <ImageWithText
+        image_placement={"right"}
+        src={""}
+        alt={""}
+        title={""}
+        width={""}
+        height={""}
+      ></ImageWithText>
     </div>
   );
 };

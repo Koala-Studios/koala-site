@@ -53,7 +53,11 @@ const HomepagePage = () => {
         <div style={{ display: "flex", gap: "1rem" }}>
           <Link to="/services">
             <Button
-              style={{ borderColor: "#39744f", whiteSpace: "nowrap" }}
+              style={{
+                borderColor: "#39744f",
+                whiteSpace: "nowrap",
+                border: "2px solid black",
+              }}
               type={"secondary"}
             >
               Our Services
@@ -61,7 +65,11 @@ const HomepagePage = () => {
           </Link>
           <Link to="/projects">
             <Button
-              style={{ backgroundColor: "#39744f", whiteSpace: "nowrap" }}
+              style={{
+                backgroundColor: "#39744f",
+                whiteSpace: "nowrap",
+                border: "2px solid #39744f",
+              }}
               type={"primary"}
             >
               View Our Work
