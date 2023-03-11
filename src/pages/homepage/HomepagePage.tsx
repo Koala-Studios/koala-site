@@ -6,6 +6,7 @@ import styles from "../../styles/Home.module.css";
 import Footer from "../../components/sections/Footer";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
+import VideoWithText from "../../components/sections/VideoWithText";
 
 const HomepagePage = () => {
   return (

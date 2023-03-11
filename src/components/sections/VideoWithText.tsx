@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "../../styles/Sections.module.css";
 interface Props {
-  image_placement: "left" | "right";
+  video_placement: "left" | "right";
   src: string;
-  alt: string;
   title: string;
   text?: string;
   width: string;
   height: string;
   children?: any;
-  imgStyles?: any;
+  videoStyles?: any;
   styles?: any;
   textColor?: string;
+  loop?: boolean;
 }
 
 const ImageWithText: React.FC<Props> = (props) => {
@@ -19,7 +19,7 @@ const ImageWithText: React.FC<Props> = (props) => {
     <section
       style={props.styles}
       className={`${styles.image_with_text_container} ${
-        props.image_placement == "left" ? styles.left : ""
+        props.video_placement == "left" ? styles.left : ""
       }`}
     >
       <div className={styles.image_with_text_info}>
@@ -27,13 +27,16 @@ const ImageWithText: React.FC<Props> = (props) => {
         <p style={{ color: props.textColor }}>{props.text}</p>
         {props.children}
       </div>
-      <img
-        style={props.imgStyles}
-        src={props.src}
-        alt={props.alt}
+      <video
+        style={props.videoStyles}
+        autoPlay
+        loop={props.loop}
+        muted
         width={props.width}
         height={props.height}
-      />
+      >
+        <source src={props.src} />
+      </video>
     </section>
   );
 };
