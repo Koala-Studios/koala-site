@@ -39,17 +39,17 @@ const HomepagePage = () => {
           <br /> goals
         </h2>
       </ImageWithText>
-      <ImageWithText
-        image_placement="left"
-        src="/images/koala_square.png"
-        alt=""
+      <VideoWithText
+        video_placement="left"
+        src="/videos/3dbag_in_2.mp4"
         title="Why is a well presented store important"
         text="A more professional and easier experience for your customers will increase conversion rates and brand awareness inmensly. Koala Studios specializes on user experience that is proven to get results"
         width="40%"
         height="40%"
-        imgStyles={{ borderRadius: "1.5rem" }}
+        videoStyles={{ borderRadius: "1.5rem", border: "2px solid #282420" }}
         styles={{ backgroundColor: "#ede7e0" }}
         textColor="#282420"
+        loop={false}
       >
         <div style={{ display: "flex", gap: "1rem" }}>
           <Link to="/services">
@@ -77,7 +77,7 @@ const HomepagePage = () => {
             </Button>
           </Link>
         </div>
-      </ImageWithText>
+      </VideoWithText>
       <Footer />
     </div>
   );
