@@ -32,7 +32,7 @@ const HomepageHero = () => {
               <Button
                 style={{
                   backgroundColor: "#39744f",
-                  border: "2px solid #39744f!important",
+                  border: "2px solid #39744f",
                   color: "white",
                 }}
                 type="primary light"
