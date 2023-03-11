@@ -35,7 +35,7 @@ const ImageWithText: React.FC<Props> = (props) => {
         width={props.width}
         height={props.height}
       >
-        <source src={props.src} />
+        <source src={props.src}  />
       </video>
     </section>
   );

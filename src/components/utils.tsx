@@ -16,9 +16,10 @@ export interface IProjectPage {
   logo_color: string;
   list_image: string;
   description: string;
-  color1: string;
-  color2: string;
+  bg_color: string;
+  text_color: string;
   hero_image:string;
+  hero_image_mobile:string;
   chips:number[];
 }
 

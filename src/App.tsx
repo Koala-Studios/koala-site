@@ -17,6 +17,7 @@ import ServicesSection from "./pages/services/ServicesSection";
 import AlloPage from "./pages/projects/allo/AlloPage";
 import AboutPage from "./pages/about/AboutPage";
 import HomepagePage from "./pages/homepage/HomepagePage";
+import StlthPage from "./pages/projects/allo/StlthPage";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<HomepagePage />} />
             <Route path="/projects" element={<ProjectList />} />
             <Route path="/projects/allo" element={<AlloPage />} />
+            <Route path="/projects/stlth" element={<StlthPage />} />
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/about" element={<AboutPage />} />

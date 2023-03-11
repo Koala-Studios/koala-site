@@ -137,10 +137,13 @@ margin-right: 2rem;
 
     .image_with_text_container{
         padding:0;
+        align-items: unset;
         flex-direction: column-reverse!important;
     }
 
-    
+    .title_with_text {
+        color:white;
+    }
 
     .image_with_text_container div{
         padding: var(--global-padding);

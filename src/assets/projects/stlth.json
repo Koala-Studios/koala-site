@@ -1,14 +1,14 @@
 {
-    "handle":"allo",
-    "next_handle":"stlth",
+    "handle":"stlth",
+    "next_handle":"allo",
     "title":"ALLO",
     "list_image":"/images/project/allo_list.png",
     "logo":"/images/project/logos/allo_logo.png",
     "description":"adifsod",
-    "bg_color":"#1a1714",
+    "bg_color":"#000000",
     "text_color":"#ede7e0",
     "logo_color":"#d4a363",
-    "hero_image":"/images/project/allo/allo_image_wide.jpg",
+    "hero_image":"../images/project/stlth-placeholder-wide.jpg",
     "hero_image_mobile":"/images/project/allo_list.png",
     "chips":[1,2]
 }
