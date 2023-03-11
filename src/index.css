@@ -30,7 +30,11 @@ body {
   background-color: #0d0d0d;
 }
 
-
+p{
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+}
 
 h1,h2,h3,h4 {
   font-family: "Integral ExtraBold";
