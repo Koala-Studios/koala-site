@@ -22,14 +22,14 @@ const HomepagePage = () => {
           "Graphic Design",
         ]}
       />
-      <ImageWithText
-        image_placement="right"
-        src="/images/koala_square.png"
-        alt=""
+      <VideoWithText
+        video_placement="right"
+        src="/videos/cupcake_video.mp4"
         title=""
-        width="40%"
-        height="40%"
-        imgStyles={{ borderRadius: "1.5rem" }}
+        width="50%"
+        height="50%"
+        loop
+        videoStyles={{ borderRadius: "1.5rem", border: "2px solid #d1bdad" }}
         styles={{ backgroundColor: "#181A17" }}
       >
         <h2 className={styles.box1_title}>
@@ -38,7 +38,7 @@ const HomepagePage = () => {
           will help you SURPASS your Ecommerce
           <br /> goals
         </h2>
-      </ImageWithText>
+      </VideoWithText>
       <VideoWithText
         video_placement="left"
         src="/videos/3dbag_in_2.mp4"
