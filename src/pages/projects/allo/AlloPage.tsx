@@ -33,6 +33,7 @@ const AlloPage = () => {
         }
         width={""}
         height={""}
+        imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
 
       <ImageWithText
@@ -45,15 +46,18 @@ const AlloPage = () => {
         }
         width={""}
         height={""}
+        imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
 
       <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
-      <video
+      <div style={{
+          padding: "var(--global-padding)"}}>
+              <video
         style={{
-          padding: "var(--global-padding)",
           maxWidth: "100%",
           marginTop: 25,
           marginBottom: 25,
+          borderRadius: "1rem", border: "2px solid #282420"
         }}
         loop
         autoPlay
@@ -61,6 +65,8 @@ const AlloPage = () => {
       >
         <source src="..\videos\allo\allo_scroll.mp4"></source>
       </video>
+      </div>
+
       <p style={{ color: "#ede7e0", marginBottom: 50 }}>
         Scrolling video in home page
       </p>
@@ -75,12 +81,12 @@ const AlloPage = () => {
         }}
       >
         <div>
-          <img src="..\images\project\allo\allo-shop-page.png"></img>
+          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\allo-shop-page.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>Shop Page</p>
         </div>
         <div>
-          <img src="..\images\project\allo\allo-creamer-product-page.png"></img>
+          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\allo-creamer-product-page.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>
             {" "}
@@ -88,16 +94,19 @@ const AlloPage = () => {
           </p>
         </div>
         <div>
-          <img src="..\images\project\allo\variety-pack-mobile.png"></img>
+          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\variety-pack-mobile.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}> Variety Pack Page</p>
         </div>
       </div>
 
-      <img
-        style={{ padding: "var(--global-padding)", maxWidth: "100%" }}
+      <div style={{padding: "var(--global-padding)"}}>
+              <img
+        style={{  maxWidth: "100%", borderRadius:'1rem' }}
         src="../images/project/allo/allo-product-desktop2.png"
       ></img>
+      </div>
+
 
       <p style={{ color: "#ede7e0", marginTop: 15, marginBottom: 50 }}>
         {" "}
