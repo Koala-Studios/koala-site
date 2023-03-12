@@ -12,8 +12,9 @@ const AboutpageHero = () => {
         </div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>
-            About <br/>
-            Koala Studios
+            A Bit <br/>About <br/>
+            Koala<br/>
+            Studios
           </h1>
         </div>
       </section>
