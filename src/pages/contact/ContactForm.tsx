@@ -5,6 +5,11 @@ export const ContactForm = () => {
   return (
     <div className={styles.form_container}>
       <div className={styles.contact_title}>
+        <img
+          style={{ borderRadius: "1.5rem" }}
+          src="/images/koala_square.png"
+          height="300"
+        />
         <h1>Let's Work Together!</h1>
         <p>
           Connect with our team regarding an upcoming project or transformation

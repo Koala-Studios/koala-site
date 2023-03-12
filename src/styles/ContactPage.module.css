@@ -9,15 +9,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 8rem;
   gap:3rem;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #181a17;
+
 }
 
 .form {
   padding: 2rem;
-  background-color:  #7147e2;
   border-radius: 0.2rem;
-  color: white;
+  color: #ede7e0;
   display: grid;
   gap: 1rem;
   flex-direction: column;
@@ -30,6 +33,14 @@
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
+  background-color: #ede7e0;
+  border: none!important;
+}
+
+.form textarea{
+  background-color: #ede7e0;
+  border: none!important;
+  
 }
 
 .form_texts {
@@ -37,6 +48,10 @@
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+.form_texts label { 
+  text-align: left;
 }
 
 .message {
@@ -50,7 +65,7 @@
 }
 .send_button {
   color: white;
-  background-color: black;
+  background-color: #39744f;
   padding: 1rem 1.5rem;
   border-radius: 0.1rem;
   width: 100%;
@@ -68,6 +83,7 @@
   }
 
   .form_texts {
+    text-align: left;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
