@@ -1,5 +1,5 @@
 import React from "react";
-import project from "../../../assets/projects/stlth.json";
+import project from "../../../assets/projects/elikai.json";
 import Footer from "../../../components/sections/Footer";
 import ImageWithText from "../../../components/sections/ImageWithText";
 import NextProject from "../../../components/sections/NextProject";
