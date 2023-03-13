@@ -12,6 +12,7 @@ interface Props {
   imgStyles?: any;
   styles?: any;
   textColor?: string;
+  subtitle?: any;
 }
 
 const ImageWithText: React.FC<Props> = (props) => {
@@ -23,7 +24,16 @@ const ImageWithText: React.FC<Props> = (props) => {
       }`}
     >
       <div className={styles.image_with_text_info}>
-        <h2 style={{ color: props.textColor }}>{props.title}</h2>
+      <h2 style={{ color: props.textColor }}>{props.title}</h2>
+       {props.subtitle &&
+       <div className={styles.subtitle_pill} style={{ color: props.textColor }}>
+         <div>
+          {props.subtitle}
+         </div>
+        </div> 
+        }
+
+
         <p style={{ color: props.textColor }}>{props.text}</p>
         {props.children}
       </div>

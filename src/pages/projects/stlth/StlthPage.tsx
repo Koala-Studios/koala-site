@@ -29,6 +29,7 @@ const StlthPage = () => {
         video_placement={"right"}
         src={"../images/project/stlth/stlth-devices-color.mp4"}
         title={"Who is Stlth?"}
+        subtitle={"E-cigarette"}
         loop={false}
         text={
           "STLTH's founders were introduced to vaping products almost a decade ago and it helped them transition away from traditional cigarettes, which confirmed their belief in the potential of vaping systems. Their mission is to provide an alternative to traditional tobacco products for adult smokers. STLTH uses analytical machinery to develop and maintain less harmful products and is a leader in compliance, consulting third-party labs regularly to validate their methods and results."
@@ -36,7 +37,8 @@ const StlthPage = () => {
         width="40%"
         height="40%"
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
-      ></VideoWithText>
+      >
+      </VideoWithText>
       <VideoWithText
         video_placement={"left"}
         src={"../images/project/stlth/stlth-usb.webm"}
@@ -48,7 +50,7 @@ const StlthPage = () => {
         height={""}
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
-      <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
+      <h2 style={{ color: "#ede7e0", fontSize:32 }}> Our Results</h2>
       <video
         style={{
           padding: "var(--global-padding)",
@@ -62,8 +64,8 @@ const StlthPage = () => {
       >
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
-      <h2 style={{ color: "#ede7e0", marginBottom: 100 }}>
-        Here's a few of the pages that we worked on
+      <h2 style={{ color: "#ede7e0", marginBottom: 100, fontSize:32 }}>
+        Gallery
       </h2>
       <div
         style={{
