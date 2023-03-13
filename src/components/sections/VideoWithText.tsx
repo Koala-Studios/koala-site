@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../../styles/Sections.module.css";
 interface Props {
   video_placement: "left" | "right";
@@ -14,12 +14,41 @@ interface Props {
   loop?: boolean;
 }
 
-const ImageWithText: React.FC<Props> = (props) => {
+const observer = new IntersectionObserver(
+  (entries) => {
+    console.log("HELOLDAFK");
+    entries.forEach((entry: any) => {
+      if (!entry.isIntersecting) {
+        entry.target.pause();
+        entry.target.currentTime = 0;
+        //   playState = false;
+      } else {
+        entry.target.play();
+        //   playState = true;
+      }
+    });
+  },
+  { rootMargin: "-15% 0% -15% 0%" }
+);
+
+const VideoWithText: React.FC<Props> = (props) => {
+  const videoRef = useRef<any>();
+
+  useEffect(() => {
+    if (videoRef) {
+      observer.observe(videoRef.current!);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section
       style={props.styles}
       className={`${styles.image_with_text_container} ${
-        props.video_placement == "left" ? styles.left : ""
+        props.video_placement === "left" ? styles.left : ""
       }`}
     >
       <div className={styles.image_with_text_info}>
@@ -28,6 +57,7 @@ const ImageWithText: React.FC<Props> = (props) => {
         {props.children}
       </div>
       <video
+        ref={videoRef}
         style={props.videoStyles}
         autoPlay
         loop={props.loop}
@@ -35,9 +65,9 @@ const ImageWithText: React.FC<Props> = (props) => {
         width={props.width}
         height={props.height}
       >
-        <source src={props.src}  />
+        <source src={props.src} />
       </video>
     </section>
   );
 };
-export default ImageWithText;
+export default VideoWithText;
