@@ -64,8 +64,12 @@ const AlloPage = () => {
           paddingTop: 100,
         }}
       >
-        <h2 style={{ margin: 0 }}>Want to learn more about us?</h2>
-        <p style={{ margin: 0 }}>Take a look through our projects!</p>
+        <h2 style={{ margin: 0, color: "black" }}>
+          Want to learn more about us?
+        </h2>
+        <p style={{ margin: 0, color: "black" }}>
+          Take a look through our projects!
+        </p>
         <Link to="/projects">
           <Button
             style={{
