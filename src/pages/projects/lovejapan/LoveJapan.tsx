@@ -18,198 +18,43 @@ const LoveJapan = () => {
 
       <ScrollingText
         TextArray={[
-          "Shopify Ecommerce",
-          "UI/UX Design",
-          "Web Development",
-          "Consulting",
-          "3D Renders",
-          "Graphic Design",
+            "UI/UX Design",
+            "Consulting",
+            "UI/UX Design",
+            "Consulting",
+            "UI/UX Design",
+            "Consulting",
         ]}
       />
       <ImageWithText
         image_placement={"right"}
-        src={"../images/project/allo/vanilla_noncreamer.webp"}
+        src={"../images/project/lovejapan/lovejapan.webp"}
         alt={""}
-        title={"About Allo"}
-        text={
-          "Allo Nutrition is a Toronto-based company offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
-        }
+        title={"About LoveJapan4Life"}
+        text={''}
         width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
-      ></ImageWithText>
-
-      <ImageWithText
-        image_placement={"left"}
-        src={"../images/project/allo/hazelnut_creamer.webp"}
-        alt={""}
-        title={"How did we Help?"}
-        text={
-          "Allo's vision was to create a unique digital experience that would allow users to understand and appreciate their innovative products. To achieve this, we helped Allo design and launch a website that goes beyond just providing product information. We worked closely with Allo to understand their brand and their goals, and crafted a website that truly represents their values and ethos. "
-        }
-        width={"40%"}
-        height={""}
-        imgStyles={{ borderRadius: "1.5rem" }}
-      ></ImageWithText>
-
-      <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
-
-      <div
-        style={{
-          padding: "var(--global-padding)",
-          display: "flex",
-          gap: 40,
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#ede7e0",
-          fontSize: 13,
-          marginTop:50
-        }}
       >
-        <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  4.02%
-                </span>
-                Conversion Rate
-            </div>
-          </div>
-          <Link
-            target="_blank"
-            to={
-              "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
-            }
-          >
-          (vs 2022 Avg 1.4%)
-          </Link>
-        </div>
-        <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  1 Year
-                </span>
-                Since Launch
-            </div>
-          </div>
-          <div style={{height:16}}>
+        <p>The store owner was inspired to create a store after falling in love with Japan during a trip over three years ago.
+        They were captivated by the beauty of the country, its people, culture, and delicious food. Upon returning to North America,
+        they realized that there were many others who shared the same love for Japan. 
+        The owner's mission is to provide the best and most authentic Japanese-themed products to spread the joy of Japan around the world, 
+        even to those who cannot travel there.</p>
+      </ImageWithText>
+        <TitleWithText orientation={"horizontal"} title={"How did we help?"} text={''}>
 
-          </div>
-        </div>
+        <p>
+            After conducting a thorough analysis, we were able to pinpoint the most pressing issues and devised a comprehensive plan to address them.
+            Leveraging insights from our analytics data, we identified the key bottlenecks in the customer conversion process and formulated targeted solutions to improve the client's website. 
+            By working closely with the client, we provided a clear roadmap for implementing these changes, which led to a significant boost in performance.<br/><br/>
+            Thanks to our collaborative efforts, the client was able to successfully execute most of the recommended modifications, resulting in a host of positive outcomes.
+            These included increased website traffic, higher engagement rates, and a substantial improvement in overall customer satisfaction.
+            By leveraging data-driven insights and providing actionable recommendations, we were able to help the client achieve their goals and drive meaningful growth
+        </p>
+            </TitleWithText>
 
-        <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  +300,000
-                </span>
-                Sessions
-            </div>
-          </div>
-          <div style={{height:16}}>
 
-          </div>
-        </div>
-
-        <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  14
-                </span>
-                Coffees Spilled
-            </div>
-          </div>
-          <div style={{height:16}}>
-          </div>
-        </div>
-
-      </div>
-
-      <div
-        style={{
-          padding: "var(--global-padding)",
-        }}
-      >
-        <video
-          style={{
-            maxWidth: "100%",
-            marginTop: 25,
-            marginBottom: 25,
-            borderRadius: "1rem",
-            border: "2px solid #282420",
-          }}
-          loop
-          autoPlay
-          muted
-        >
-          <source src="..\videos\allo\allo_scroll.mp4"></source>
-        </video>
-      </div>
-
-      <p style={{ color: "#ede7e0", marginBottom: 50 }}>
-        Scrolling video in home page
-      </p>
-      <div
-        style={{
-          padding: "var(--global-padding)",
-          marginTop: 25,
-          marginBottom: 50,
-          width: "100%",
-          gap: 15,
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <div>
-          <img
-            style={{ borderRadius: "1rem", width: "100%" }}
-            src="..\images\project\allo\allo-shop-page.png"
-          ></img>
-
-          <p style={{ color: "#ede7e0", marginTop: 15 }}>Shop Page</p>
-        </div>
-        <div>
-          <img
-            style={{ borderRadius: "1rem", width: "100%" }}
-            src="..\images\project\allo\allo-creamer-product-page.png"
-          ></img>
-
-          <p style={{ color: "#ede7e0", marginTop: 15 }}>
-            {" "}
-            Mobile Product Page
-          </p>
-        </div>
-        <div>
-          <img
-            style={{ borderRadius: "1rem", width: "100%" }}
-            src="..\images\project\allo\variety-pack-mobile.png"
-          ></img>
-
-          <p style={{ color: "#ede7e0", marginTop: 15 }}> Variety Pack Page</p>
-        </div>
-      </div>
-
-      <div style={{ padding: "var(--global-padding)" }}>
-        <img
-          style={{ maxWidth: "100%", borderRadius: "1rem" }}
-          src="../images/project/allo/allo-product-desktop2.png"
-        ></img>
-      </div>
-
-      <p style={{ color: "#ede7e0", marginTop: 15, marginBottom: 50 }}>
-        {" "}
-        Desktop Product Page
-      </p>
       <NextProject next_link={`/projects/${project.next_handle}`} />
       <Footer></Footer>
     </div>

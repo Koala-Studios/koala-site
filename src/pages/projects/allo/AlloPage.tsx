@@ -67,7 +67,6 @@ const AlloPage = () => {
           marginTop: 50,
         }}
       >
-        <div>
           <StatBadge
             LargeText="4.02%"
             SmallText="Conversion Rate"
@@ -82,38 +81,19 @@ const AlloPage = () => {
               </Link>
             }
           />
-        </div>
-        <div>
-          <div className={styles.stat_badge}>
-            <div>
-              <span style={{ fontSize: 35 }}>1 Year</span>
-              Since Launch
-            </div>
-          </div>
-          <div style={{ height: 16 }}></div>
-        </div>
-
-        <div>
-          <div className={styles.stat_badge}>
-            <div>
-              <span style={{ fontSize: 35 }}>+300,000</span>
-              Sessions
-            </div>
-          </div>
-          <div style={{ height: 16 }}></div>
-        </div>
-
-        <div>
-          <div className={styles.stat_badge}>
-            <div>
-              <span style={{ fontSize: 35 }}>14</span>
-              Coffees Spilled
-            </div>
-          </div>
-          <div style={{ height: 16 }}></div>
-        </div>
+          <StatBadge
+            LargeText="1 Year"
+            SmallText="Since Launch"
+        />
+          <StatBadge
+            LargeText="+300,000"
+            SmallText="Sessions"
+        />
+          <StatBadge
+            LargeText="14"
+            SmallText="Coffees Spilled"
+          />
       </div>
-
       <h2 style={{ color: "#ede7e0", marginTop: 150, fontSize: "2rem" }}>
         {" "}
         Gallery{" "}
