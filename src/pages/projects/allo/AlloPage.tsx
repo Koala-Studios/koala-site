@@ -75,18 +75,19 @@ const AlloPage = () => {
           padding: "var(--global-padding)",
           marginTop: 25,
           marginBottom: 50,
+          width:'100%',
           gap: 15,
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <div>
-          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\allo-shop-page.png"></img>
+          <img style={{borderRadius: '1rem', width:'100%' }} src="..\images\project\allo\allo-shop-page.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>Shop Page</p>
         </div>
         <div>
-          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\allo-creamer-product-page.png"></img>
+          <img style={{borderRadius: '1rem', width:'100%'  }} src="..\images\project\allo\allo-creamer-product-page.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>
             {" "}
@@ -94,7 +95,7 @@ const AlloPage = () => {
           </p>
         </div>
         <div>
-          <img style={{borderRadius: '1rem' }} src="..\images\project\allo\variety-pack-mobile.png"></img>
+          <img style={{borderRadius: '1rem', width:'100%'  }} src="..\images\project\allo\variety-pack-mobile.png"></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}> Variety Pack Page</p>
         </div>
