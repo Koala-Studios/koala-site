@@ -38,8 +38,7 @@ const StlthPage = () => {
         width="40%"
         height="40%"
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
-      >
-      </VideoWithText>
+      ></VideoWithText>
       <VideoWithText
         video_placement={"left"}
         src={"../images/project/stlth/stlth-usb.webm"}
@@ -51,7 +50,7 @@ const StlthPage = () => {
         height={""}
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
-      <h2 style={{ color: "#ede7e0", fontSize:32 }}> Our Results</h2>
+      <h2 style={{ color: "#ede7e0", fontSize: 32 }}> Our Results</h2>
       <video
         style={{
           padding: "var(--global-padding)",
@@ -65,7 +64,7 @@ const StlthPage = () => {
       >
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
-      <h2 style={{ color: "#ede7e0", marginBottom: 100, fontSize:32 }}>
+      <h2 style={{ color: "#ede7e0", marginBottom: 100, fontSize: 32 }}>
         Gallery
       </h2>
       <div
@@ -163,18 +162,6 @@ const StlthPage = () => {
           <p style={{ color: "#ede7e0", marginTop: 15 }}>New Cart</p>
         </div>
       </div>
-      <ImageWithText
-        src="..\images\project\stlth\stlth-device.jpg"
-        alt=""
-        image_placement={"right"}
-        title={"Conclusion"}
-        text={
-          "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
-        }
-        width={"40%"}
-        height={""}
-        imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
-      ></ImageWithText>
       <NextProject next_link={`/projects/${project.next_handle}`} />
       <Footer></Footer>
     </div>

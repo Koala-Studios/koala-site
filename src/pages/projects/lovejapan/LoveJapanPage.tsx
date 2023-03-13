@@ -69,7 +69,7 @@ const LoveJapan = () => {
     color: "#ede7e0",
     fontSize: 13,
     marginTop: 50,
-    marginBottom:200
+    marginBottom:150
   }}
 >
     <StatBadge

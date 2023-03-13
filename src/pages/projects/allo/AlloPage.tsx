@@ -171,7 +171,7 @@ const AlloPage = () => {
         ></img>
       </div>
 
-      <p style={{ color: "#ede7e0", marginTop: 15, marginBottom: 50 }}>
+      <p style={{ color: "#ede7e0", marginTop: 15, marginBottom: 150 }}>
         {" "}
         Desktop Product Page
       </p>
