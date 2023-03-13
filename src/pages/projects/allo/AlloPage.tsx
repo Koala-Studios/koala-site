@@ -8,6 +8,7 @@ import ProjectHero from "../../../components/sections/ProjectHero";
 import ScrollingText from "../../../components/sections/ScrollingText";
 import TitleWithText from "../../../components/sections/TitleWithText";
 import styles from "../../../styles/ProjectSections.module.css";
+import StatBadge from "../StatBadge";
 
 const AlloPage = () => {
   console.log(project);
@@ -63,76 +64,54 @@ const AlloPage = () => {
           alignItems: "center",
           color: "#ede7e0",
           fontSize: 13,
-          marginTop:50
+          marginTop: 50,
         }}
       >
         <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  4.02%
-                </span>
-                Conversion Rate
-            </div>
-          </div>
-          <Link
-            target="_blank"
-            to={
-              "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
+          <StatBadge
+            LargeText="4.02%"
+            SmallText="Conversion Rate"
+            UnderText={
+              <Link
+                target="_blank"
+                to={
+                  "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
+                }
+              >
+                (vs 2022 Avg 1.4%)
+              </Link>
             }
-          >
-          (vs 2022 Avg 1.4%)
-          </Link>
+          />
         </div>
         <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  1 Year
-                </span>
-                Since Launch
+          <div className={styles.stat_badge}>
+            <div>
+              <span style={{ fontSize: 35 }}>1 Year</span>
+              Since Launch
             </div>
           </div>
-          <div style={{height:16}}>
-
-          </div>
+          <div style={{ height: 16 }}></div>
         </div>
 
         <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  +300,000
-                </span>
-                Sessions
+          <div className={styles.stat_badge}>
+            <div>
+              <span style={{ fontSize: 35 }}>+300,000</span>
+              Sessions
             </div>
           </div>
-          <div style={{height:16}}>
-
-          </div>
+          <div style={{ height: 16 }}></div>
         </div>
 
         <div>
-          <div
-            className={styles.stat_badge}
-          >
-              <div>
-                <span style={{ fontSize: 35 }}>
-                  14
-                </span>
-                Coffees Spilled
+          <div className={styles.stat_badge}>
+            <div>
+              <span style={{ fontSize: 35 }}>14</span>
+              Coffees Spilled
             </div>
           </div>
-          <div style={{height:16}}>
-          </div>
+          <div style={{ height: 16 }}></div>
         </div>
-
       </div>
 
       <div
