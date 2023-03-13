@@ -6,9 +6,10 @@ import { useLocation } from "react-router-dom";
 
 interface Props {
   project: IProjectPage;
+  title?: any;
 }
 
-const ProjectHero: React.FC<Props> = ({ project }) => {
+const ProjectHero: React.FC<Props> = ({ project, title }) => {
   const [animate, setAnimate] = useState(false);
   const location = useLocation();
 
@@ -26,10 +27,7 @@ const ProjectHero: React.FC<Props> = ({ project }) => {
     <div className={`${styles.hero_container} ${animate ? styles.dark : ""}`}>
       <div className={styles.hero_info}>
         <img src={project.logo} />
-        <h1>
-          Protein Podwer <br />
-          For Hot Coffee
-        </h1>
+        {title}
       </div>
 
       <div className={styles.title_image}>

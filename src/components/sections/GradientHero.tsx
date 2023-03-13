@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../../components/Button";
 import styles from "../../styles/Home.module.css";
 
@@ -11,6 +11,12 @@ interface Props {
 }
 
 const GradientHero: React.FC<Props> = (props) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.key]);
+
   return (
     <div
       style={{
@@ -29,7 +35,7 @@ const GradientHero: React.FC<Props> = (props) => {
             // background: "linear-gradient(45deg, #181a17, #203f44,#433960)",
             background: props.gradient,
           }}
-          className={styles.hero_video}
+          className={styles.hero_gradient}
         ></div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>{props.title}</h1>

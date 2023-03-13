@@ -81,6 +81,32 @@
 
 }
 
+.hero_gradient{
+  position: absolute;
+  /* right:10%; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  margin-top: -1rem;
+  justify-content: flex-end;
+  background-size: 200% 200%!important;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .hero_video{
   position: absolute;
   /* right:10%; */

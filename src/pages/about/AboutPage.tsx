@@ -7,10 +7,14 @@ import ScrollingText from "../../components/sections/ScrollingText";
 import { hover } from "@testing-library/user-event/dist/hover";
 import Footer from "../../components/sections/Footer";
 import { Link } from "react-router-dom";
+import GradientHero from "../../components/sections/GradientHero";
 const AlloPage = () => {
   return (
     <div style={{ backgroundColor: "#181A17", overflowX: "hidden" }}>
-      <AboutpageHero></AboutpageHero>
+      <GradientHero
+        gradient="linear-gradient(45deg, #181a17, #203f44,#433960)"
+        title="We work with innovative brands to bring engaging products to life."
+      />
       <ScrollingText
         TextArray={[
           "Shopify Ecommerce",

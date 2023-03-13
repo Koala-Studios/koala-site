@@ -16,7 +16,15 @@ const AlloPage = () => {
 
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
-      <ProjectHero project={project} />
+      <ProjectHero
+        project={project}
+        title={
+          <h1>
+            Protein Podwer <br />
+            For Hot Coffee
+          </h1>
+        }
+      />
 
       <ScrollingText
         TextArray={[
@@ -41,16 +49,15 @@ const AlloPage = () => {
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >
-      <div>
-
-      <Link style={{width:'fit-content', display:'block'}} to={project.site_link} target="_blank">
-            <Button
-              type={"primary light"}
-            >
-            View Live Site
-            </Button>
+        <div>
+          <Link
+            style={{ width: "fit-content", display: "block" }}
+            to={project.site_link}
+            target="_blank"
+          >
+            <Button type={"primary light"}>View Live Site</Button>
           </Link>
-          </div>
+        </div>
       </ImageWithText>
 
       <ImageWithText
@@ -80,32 +87,23 @@ const AlloPage = () => {
           marginTop: 50,
         }}
       >
-          <StatBadge
-            LargeText="4.02%"
-            SmallText="Conversion Rate"
-            UnderText={
-              <Link
-                target="_blank"
-                to={
-                  "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
-                }
-              >
-                (vs 2022 Avg 1.4%)
-              </Link>
-            }
-          />
-          <StatBadge
-            LargeText="1 Year"
-            SmallText="Since Launch"
+        <StatBadge
+          LargeText="4.02%"
+          SmallText="Conversion Rate"
+          UnderText={
+            <Link
+              target="_blank"
+              to={
+                "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
+              }
+            >
+              (vs 2022 Avg 1.4%)
+            </Link>
+          }
         />
-          <StatBadge
-            LargeText="+300,000"
-            SmallText="Sessions"
-        />
-          <StatBadge
-            LargeText="14"
-            SmallText="Coffees Spilled"
-          />
+        <StatBadge LargeText="1 Year" SmallText="Since Launch" />
+        <StatBadge LargeText="+300,000" SmallText="Sessions" />
+        <StatBadge LargeText="14" SmallText="Coffees Spilled" />
       </div>
       <h2 style={{ color: "#ede7e0", marginTop: 150, fontSize: "2rem" }}>
         {" "}
