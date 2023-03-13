@@ -8,10 +8,10 @@ const HomepageHero = () => {
     <div className={styles.hero_section}>
       <section className={styles.hero_container}>
         <div className={styles.hero_video}>
-          <img src="/images/koala_square.png" />
-          {/* <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
-            <source src="/videos/koalavideo2_60fps.mp4" />
-          </video> */}
+          {/* <img src="/images/koala_square.png" /> */}
+          <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
+            <source src="/videos/koala_wide.mp4" />
+          </video>
         </div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>

@@ -16,7 +16,6 @@ interface Props {
 
 const observer = new IntersectionObserver(
   (entries) => {
-    console.log("HELOLDAFK");
     entries.forEach((entry: any) => {
       if (!entry.isIntersecting) {
         entry.target.pause();

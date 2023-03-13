@@ -47,7 +47,7 @@ const AlloPage = () => {
           <br />
           <br />
           Thank you for considering Koala Studios for your needs. We look
-          forward to helping you take your brand to the next level!"
+          forward to helping you take your brand to the next level!
         </p>
       </ImageWithText>
 

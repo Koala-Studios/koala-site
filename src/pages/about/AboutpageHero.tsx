@@ -8,12 +8,17 @@ const AboutpageHero = () => {
     <div className={styles.hero_section}>
       <section className={styles.hero_container}>
         <div className={styles.hero_video}>
-          <img src="/images/koala_square.png" />
+          <img
+            style={{ borderBottomLeftRadius: "4rem" }}
+            src="/images/koala_square.png"
+          />
         </div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>
-            A Bit <br/>About <br/>
-            Koala<br/>
+            A Bit <br />
+            About <br />
+            Koala
+            <br />
             Studios
           </h1>
         </div>
