@@ -14,6 +14,8 @@ const ProjectHero: React.FC<Props> = ({ project }) => {
 
   useEffect(() => {
     if (animate == false) {
+      window.scrollTo(0, 0);
+
       setTimeout(() => {
         setAnimate(true);
       }, 300);
