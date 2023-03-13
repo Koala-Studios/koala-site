@@ -7,11 +7,19 @@ interface Props {
   gradient: string;
   title: string;
   height?: string;
+  bg_color?: string;
 }
 
 const GradientHero: React.FC<Props> = (props) => {
   return (
-    <div style={{ height: props.height }} className={styles.hero_section}>
+    <div
+      style={{
+        height: props.height,
+        background: props.bg_color,
+        overflow: "hidden",
+      }}
+      className={styles.hero_section}
+    >
       <section
         style={{ height: props.height }}
         className={styles.hero_container}
