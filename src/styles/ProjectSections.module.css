@@ -113,10 +113,10 @@
     width: 200px;
     max-height: 200px;
     height: 200px;
-    border: 2px solid #ffffff36;
+    border: 2px solid  #939a96c2;
     border-radius: 50%;
     margin-bottom:15px;
-    transition: 500ms
+    transition: 500ms;
 }
 
 .stat_badge:hover {
