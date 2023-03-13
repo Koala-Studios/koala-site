@@ -27,9 +27,9 @@ const AlloPage = () => {
         image_placement={"right"}
         src={"../images/project/allo/vanilla_noncreamer.webp"}
         alt={""}
-        title={"Who is Allo?"}
+        title={"About Allo"}
         text={
-          "Allo Nutrition is a Toronto-based start-up offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
+          "Allo Nutrition is a Toronto-based company offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
         }
         width={""}
         height={""}
@@ -50,21 +50,25 @@ const AlloPage = () => {
       ></ImageWithText>
 
       <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
-      <div style={{
-          padding: "var(--global-padding)"}}>
-              <video
+      <div
         style={{
-          maxWidth: "100%",
-          marginTop: 25,
-          marginBottom: 25,
-          borderRadius: "1rem", border: "2px solid #282420"
+          padding: "var(--global-padding)",
         }}
-        loop
-        autoPlay
-        muted
       >
-        <source src="..\videos\allo\allo_scroll.mp4"></source>
-      </video>
+        <video
+          style={{
+            maxWidth: "100%",
+            marginTop: 25,
+            marginBottom: 25,
+            borderRadius: "1rem",
+            border: "2px solid #282420",
+          }}
+          loop
+          autoPlay
+          muted
+        >
+          <source src="..\videos\allo\allo_scroll.mp4"></source>
+        </video>
       </div>
 
       <p style={{ color: "#ede7e0", marginBottom: 50 }}>
@@ -75,19 +79,25 @@ const AlloPage = () => {
           padding: "var(--global-padding)",
           marginTop: 25,
           marginBottom: 50,
-          width:'100%',
+          width: "100%",
           gap: 15,
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <div>
-          <img style={{borderRadius: '1rem', width:'100%' }} src="..\images\project\allo\allo-shop-page.png"></img>
+          <img
+            style={{ borderRadius: "1rem", width: "100%" }}
+            src="..\images\project\allo\allo-shop-page.png"
+          ></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>Shop Page</p>
         </div>
         <div>
-          <img style={{borderRadius: '1rem', width:'100%'  }} src="..\images\project\allo\allo-creamer-product-page.png"></img>
+          <img
+            style={{ borderRadius: "1rem", width: "100%" }}
+            src="..\images\project\allo\allo-creamer-product-page.png"
+          ></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>
             {" "}
@@ -95,19 +105,21 @@ const AlloPage = () => {
           </p>
         </div>
         <div>
-          <img style={{borderRadius: '1rem', width:'100%'  }} src="..\images\project\allo\variety-pack-mobile.png"></img>
+          <img
+            style={{ borderRadius: "1rem", width: "100%" }}
+            src="..\images\project\allo\variety-pack-mobile.png"
+          ></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}> Variety Pack Page</p>
         </div>
       </div>
 
-      <div style={{padding: "var(--global-padding)"}}>
-              <img
-        style={{  maxWidth: "100%", borderRadius:'1rem' }}
-        src="../images/project/allo/allo-product-desktop2.png"
-      ></img>
+      <div style={{ padding: "var(--global-padding)" }}>
+        <img
+          style={{ maxWidth: "100%", borderRadius: "1rem" }}
+          src="../images/project/allo/allo-product-desktop2.png"
+        ></img>
       </div>
-
 
       <p style={{ color: "#ede7e0", marginTop: 15, marginBottom: 50 }}>
         {" "}
