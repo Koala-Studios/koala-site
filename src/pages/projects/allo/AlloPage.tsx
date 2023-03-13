@@ -12,8 +12,6 @@ import styles from "../../../styles/ProjectSections.module.css";
 import StatBadge from "../StatBadge";
 
 const AlloPage = () => {
-  console.log(project);
-
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
       <ProjectHero
@@ -177,7 +175,7 @@ const AlloPage = () => {
       <div style={{ padding: "var(--global-padding)" }}>
         <img
           style={{ maxWidth: "100%", borderRadius: "1rem" }}
-          src="../images/project/allo/allo-product-desktop2.png"
+          src="../images/project/allo/allo-product-desktop.png"
         ></img>
       </div>
 
