@@ -17,7 +17,7 @@ import ServicesSection from "./pages/services/ServicesSection";
 import AlloPage from "./pages/projects/allo/AlloPage";
 import AboutPage from "./pages/about/AboutPage";
 import HomepagePage from "./pages/homepage/HomepagePage";
-import StlthPage from "./pages/projects/allo/StlthPage";
+import StlthPage from "./pages/projects/stlth/StlthPage";
 function App() {
   return (
     <div className="App">
