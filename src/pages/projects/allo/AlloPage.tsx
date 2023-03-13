@@ -52,7 +52,7 @@ const AlloPage = () => {
         imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
 
-      <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
+      <h2 style={{ color: "#ede7e0", fontSize:'2rem' }}> Our Results</h2>
 
       <div
         style={{
@@ -82,6 +82,7 @@ const AlloPage = () => {
             to={
               "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
             }
+            style={{textDecoration:'underline'}}
           >
           (vs 2022 Avg 1.4%)
           </Link>
@@ -134,6 +135,10 @@ const AlloPage = () => {
         </div>
 
       </div>
+
+
+      <h2 style={{ color: "#ede7e0", marginTop: 150, fontSize:'2rem' }}> Gallery </h2>
+
 
       <div
         style={{
