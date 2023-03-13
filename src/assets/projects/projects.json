@@ -13,7 +13,7 @@
         },
         {
             "handle":"stlth",
-            "next_handle":"lovejapan",
+            "next_handle":"elikai",
             "title":"STLTH",
             "list_image":"/images/project/stlth_list.png",
             "logo":"/images/project/logos/stlth_logo.png",
@@ -23,8 +23,8 @@
             "logo_color":"#b1a9b0"
         },
         {
-            "handle":"lovejapan",
-            "next_handle":"allo",
+            "handle":"elikai",
+            "next_handle":"lovejapan",
             "title":"LoveJapan",
             "list_image":"/images/project/items_test_list.png",
             "logo":"/images/project/logos/elikai_logo.png",
@@ -34,11 +34,11 @@
             "logo_color":"#dfccbb"
         },
         {
-            "handle":"elikai",
+            "handle":"lovejapan",
             "next_handle":"allo",
             "title":"EliKai",
-            "list_image":"/images/project/artblvd_list.png",
-            "logo":"/images/project/logos/elikai_logo.png",
+            "list_image":"/images/project/lovejapan_list.jpg",
+            "logo":"/images/project/logos/lovejapan_logo_small.png",
             "description":"adifsod",
             "color1":"#333",
             "color2":"#fff",
