@@ -9,7 +9,7 @@ import ScrollingText from "../../../components/sections/ScrollingText";
 import TitleWithText from "../../../components/sections/TitleWithText";
 import styles from "../../../styles/ProjectSections.module.css";
 
-const AlloPage = () => {
+const LoveJapan = () => {
   console.log(project);
 
   return (
@@ -216,4 +216,4 @@ const AlloPage = () => {
   );
 };
 
-export default AlloPage;
+export default LoveJapan;
