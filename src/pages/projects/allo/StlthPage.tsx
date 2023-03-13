@@ -63,7 +63,7 @@ const StlthPage = () => {
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
       <h2 style={{ color: "#ede7e0", marginBottom: 100 }}>
-        Here's a few instances of the pages that we worked on
+        Here's a few of the pages that we worked on
       </h2>
       <div
         style={{
@@ -150,14 +150,14 @@ const StlthPage = () => {
             src="..\images\project\stlth\stlth-home-cart-old.png"
           ></img>
 
-          <p style={{ color: "#ede7e0", marginTop: 15 }}> Old Landing Page</p>
+          <p style={{ color: "#ede7e0", marginTop: 15 }}> Old Cart</p>
         </div>
         <div>
           <img
             style={{ height: "100%" }}
             src="..\images\project\stlth\stlth-cart-new.png"
           ></img>
-          <p style={{ color: "#ede7e0", marginTop: 15 }}>New Landing Page</p>
+          <p style={{ color: "#ede7e0", marginTop: 15 }}>New Cart</p>
         </div>
       </div>
       <ImageWithText
