@@ -53,7 +53,7 @@ const AlloPage = () => {
         imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
 
-      <h2 style={{ color: "#ede7e0" }}> Our Results</h2>
+      <h2 style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
       <div
         style={{
@@ -113,6 +113,11 @@ const AlloPage = () => {
           <div style={{ height: 16 }}></div>
         </div>
       </div>
+
+      <h2 style={{ color: "#ede7e0", marginTop: 150, fontSize: "2rem" }}>
+        {" "}
+        Gallery{" "}
+      </h2>
 
       <div
         style={{
