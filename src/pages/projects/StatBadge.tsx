@@ -13,11 +13,11 @@ const StatBadge: React.FC<Props> = ({ LargeText, SmallText, UnderText }) => {
     <div>
       <div className={styles.stat_badge}>
         <div>
-          <span style={{ fontSize: 35 }}>4.02%</span>
-          Conversion Rate
+          <span style={{ fontSize: 35 }}>{LargeText}</span>
+          {SmallText}
         </div>
       </div>
-      {UnderText}
+      {UnderText ? UnderText : <div style={{ height: 16 }}></div>}
     </div>
   );
 };
