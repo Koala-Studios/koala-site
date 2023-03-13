@@ -16,7 +16,7 @@ const ProjectHero: React.FC<Props> = ({ project }) => {
     if (animate == false) {
       setTimeout(() => {
         setAnimate(true);
-      }, 800);
+      }, 300);
     }
   }, [location.key]);
 
