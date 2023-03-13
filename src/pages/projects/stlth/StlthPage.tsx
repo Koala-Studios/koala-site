@@ -54,7 +54,7 @@ const StlthPage = () => {
       <VideoWithText
         video_placement={"left"}
         src={"../images/project/stlth/stlth-usb.webm"}
-        title={"How could we Help?"}
+        title={"How did we Help?"}
         text={
           "The mission of the redesign project was to ensure that the brand and website were in sync with each other. The client had a clear vision of their brand, but the previous website design failed to communicate that vision to its audience. "
         }
@@ -174,6 +174,21 @@ const StlthPage = () => {
           <p style={{ color: "#ede7e0", marginTop: 15 }}>New Cart</p>
         </div>
       </div>
+      <div style={{marginBottom:150}}>
+      <ImageWithText
+        src="..\images\project\stlth\stlth-device.jpg"
+        alt=""
+        image_placement={"right"}
+        title={"Conclusion"}
+        text={
+          "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
+        }
+        width={"40%"}
+        height={""}
+        imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
+      ></ImageWithText>
+      </div>
+
       <NextProject next_link={`/projects/${project.next_handle}`} />
       <Footer></Footer>
     </div>

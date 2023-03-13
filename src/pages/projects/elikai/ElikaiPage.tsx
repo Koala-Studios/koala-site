@@ -29,7 +29,7 @@ const ElikaiPage = () => {
               image_placement={"right"}
               src={"../images/project/elikai/shot1.jpg"}
               title={"Who is Elikai?"}
-              subtitle={"Home & Decoration"}
+              subtitle={"Home & Decor"}
               text={"Elikai is a household goods and decorations manufacturer."}
               width="40%"
               height="40%"
@@ -52,7 +52,7 @@ const ElikaiPage = () => {
 
       <h2 style={{ color: "#ede7e0", fontSize:32, marginBottom:150 }}> Gallery</h2>
 
-    <div style={{marginBottom:250}}> 
+    <div style={{marginBottom:150}}> 
         <img src="..\images\project\elikai\shot3_less_contrast.jpg"></img>
         <img src="..\images\project\elikai\shot4_3_ps.jpg"></img>
         <img src="..\images\project\elikai\water1_test1_ps.jpg"></img>
