@@ -18,6 +18,7 @@ import AlloPage from "./pages/projects/allo/AlloPage";
 import AboutPage from "./pages/about/AboutPage";
 import HomepagePage from "./pages/homepage/HomepagePage";
 import StlthPage from "./pages/projects/stlth/StlthPage";
+import LoveJapan from "./pages/projects/lovejapan/LoveJapan";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
             <Route path="/projects" element={<ProjectList />} />
             <Route path="/projects/allo" element={<AlloPage />} />
             <Route path="/projects/stlth" element={<StlthPage />} />
+            <Route path="/projects/lovejapan" element={<LoveJapan />} />
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/about" element={<AboutPage />} />
