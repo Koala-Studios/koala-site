@@ -12,6 +12,7 @@ interface Props {
   styles?: any;
   textColor?: string;
   loop?: boolean;
+  subtitle?: any;
 }
 
 const observer = new IntersectionObserver(
@@ -51,7 +52,9 @@ const VideoWithText: React.FC<Props> = (props) => {
       }`}
     >
       <div className={styles.image_with_text_info}>
-        <h2 style={{ color: props.textColor }}>{props.title}</h2>
+      <h2 style={{ color: props.textColor }}>{props.title}</h2>
+      <div className={styles.subtitle_pill} style={{ color: props.textColor }}>{props.subtitle}</div>
+        
         <p style={{ color: props.textColor }}>{props.text}</p>
         {props.children}
       </div>

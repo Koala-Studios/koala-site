@@ -32,6 +32,7 @@ const AlloPage = () => {
         src={"../images/project/allo/vanilla_noncreamer.webp"}
         alt={""}
         title={"About Allo"}
+        subtitle={"Health & Fitness"}
         text={
           "Allo Nutrition is a Toronto-based company offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
         }

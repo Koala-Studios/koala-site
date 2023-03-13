@@ -32,6 +32,7 @@ const LoveJapan = () => {
         src={"../images/project/lovejapan/lovejapan.webp"}
         alt={""}
         title={"About LoveJapan4Life"}
+        subtitle={"Clothing & Apparel"}
         text={''}
         width={"40%"}
         height={""}

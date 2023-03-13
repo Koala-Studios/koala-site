@@ -8,6 +8,7 @@
     padding-bottom: 4rem!important;
     
 }
+
 .image_with_text_container div {
     color:#ede7e0;
     /* padding:0 0 3rem; */
@@ -66,6 +67,7 @@ border-radius: 2rem;
 }
 
 .title_with_text h2 {
+    font-size: 32px;
     margin-bottom:32px;
 }
 .title_with_text div{
@@ -122,6 +124,20 @@ margin-right: 2rem;
     animation: scroll-left2 10s linear infinite;
 } */
 
+.subtitle_pill {
+    display:flex!important;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border:2px solid white;
+    height:45px;
+    width: 200px;
+    border-radius: 25px;
+}
+.subtitle_pill div {
+    width:100%;
+    text-align: center;
+}
 
 @keyframes scroll-left {
     0% {
