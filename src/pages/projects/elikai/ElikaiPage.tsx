@@ -8,7 +8,7 @@ import ScrollingText from "../../../components/sections/ScrollingText";
 import TitleWithText from "../../../components/sections/TitleWithText";
 import VideoWithText from "../../../components/sections/VideoWithText";
 
-const StlthPage = () => {
+const ElikaiPage = () => {
   console.log(project);
 
   return (
@@ -29,11 +29,11 @@ const StlthPage = () => {
       <VideoWithText
         video_placement={"right"}
         src={"../images/project/stlth/stlth-devices-color.mp4"}
-        title={"Who is Stlth?"}
-        subtitle={"E-cigarette"}
+        title={"Who is Elikai?"}
+        subtitle={"Home & Decoration"}
         loop={false}
         text={
-          "STLTH's founders were introduced to vaping products almost a decade ago and it helped them transition away from traditional cigarettes, which confirmed their belief in the potential of vaping systems. Their mission is to provide an alternative to traditional tobacco products for adult smokers. STLTH uses analytical machinery to develop and maintain less harmful products and is a leader in compliance, consulting third-party labs regularly to validate their methods and results."
+          "Elikai is a household goods and decorations manufacturer."
         }
         width="40%"
         height="40%"
@@ -45,7 +45,7 @@ const StlthPage = () => {
         src={"../images/project/stlth/stlth-usb.webm"}
         title={"How could we Help?"}
         text={
-          "The mission of the redesign project was to ensure that the brand and website were in sync with each other. The client had a clear vision of their brand, but the previous website design failed to communicate that vision to its audience. "
+          " placeholder "
         }
         width={"40%"}
         height={""}
@@ -181,4 +181,4 @@ const StlthPage = () => {
   );
 };
 
-export default StlthPage;
+export default ElikaiPage;
