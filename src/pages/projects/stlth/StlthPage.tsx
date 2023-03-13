@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import project from "../../../assets/projects/stlth.json";
+import Button from "../../../components/Button";
 import Footer from "../../../components/sections/Footer";
 import ImageWithText from "../../../components/sections/ImageWithText";
 import NextProject from "../../../components/sections/NextProject";
@@ -38,7 +40,17 @@ const StlthPage = () => {
         width="40%"
         height="40%"
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
-      ></VideoWithText>
+      >
+        <Link style={{width:'fit-content', display:'block'}} to={project.site_link} target="_blank">
+            <Button
+              type={"primary light"}
+            >
+            View Live Site
+            </Button>
+          </Link>
+      </VideoWithText>
+
+
       <VideoWithText
         video_placement={"left"}
         src={"../images/project/stlth/stlth-usb.webm"}

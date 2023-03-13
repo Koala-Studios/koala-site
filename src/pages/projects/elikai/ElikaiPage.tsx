@@ -33,7 +33,8 @@ const ElikaiPage = () => {
               text={"Elikai is a household goods and decorations manufacturer."}
               width="40%"
               height="40%"
-              imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }} alt={""}      >
+              imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }} alt={""}>
+        
       </ImageWithText>
 
       <ImageWithText

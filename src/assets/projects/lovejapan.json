@@ -1,6 +1,6 @@
 {
     "handle":"lovejapan",
-    "next_handle":"elikai",
+    "next_handle":"allo",
     "title":"LoveJapan",
     "list_image":"/images/project/items_test_list.png",
     "logo":"/images/project/logos/allo_logo.png",
@@ -10,5 +10,6 @@
     "logo_color":"#d4a363",
     "hero_image":"/images/project/allo/allo_image_wide.jpg",
     "hero_image_mobile":"/images/project/allo_list.png",
-    "chips":[1,2]
+    "chips":[1,2],
+    "site_link":"https://lovejapanforlife.com"
 }

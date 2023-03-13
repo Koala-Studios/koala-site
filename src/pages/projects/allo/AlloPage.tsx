@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import project from "../../../assets/projects/allo.json";
+import Button from "../../../components/Button";
 import Footer from "../../../components/sections/Footer";
 import ImageWithText from "../../../components/sections/ImageWithText";
 import NextProject from "../../../components/sections/NextProject";
@@ -39,7 +40,18 @@ const AlloPage = () => {
         width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
-      ></ImageWithText>
+      >
+      <div>
+
+      <Link style={{width:'fit-content', display:'block'}} to={project.site_link} target="_blank">
+            <Button
+              type={"primary light"}
+            >
+            View Live Site
+            </Button>
+          </Link>
+          </div>
+      </ImageWithText>
 
       <ImageWithText
         image_placement={"left"}

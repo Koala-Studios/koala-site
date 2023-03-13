@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import project from "../../../assets/projects/allo.json";
+import project from "../../../assets/projects/lovejapan.json";
+import Button from "../../../components/Button";
 import Footer from "../../../components/sections/Footer";
 import ImageWithText from "../../../components/sections/ImageWithText";
 import NextProject from "../../../components/sections/NextProject";
@@ -43,6 +44,15 @@ const LoveJapan = () => {
         they realized that there were many others who shared the same love for Japan. 
         LoveJapan4Life's mission is to provide the best and most authentic Japanese-themed products to spread the joy of Japan around the world, 
         even to those who cannot travel there.</p>
+
+
+        <Link style={{width:'fit-content', display:'block'}} to={project.site_link} target="_blank">
+            <Button
+              type={"primary light"}
+            >
+            View Live Site
+            </Button>
+          </Link>
       </ImageWithText>
         <TitleWithText orientation={"horizontal"} title={"How did we help?"} text={''}>
         <div style={{display:'flex', width:'100%', justifyContent:'center', textAlign:'left'}}>
