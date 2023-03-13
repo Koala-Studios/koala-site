@@ -50,10 +50,12 @@ p{
   font-family: "Poppins-Regular";
   font-weight: 600;
   font-size: 18px;
+  color: #ede7e0;
 }
 
 h1,h2,h3,h4 {
   font-family: "Integral ExtraBold";
+  color: #ede7e0;
 }
 
 a {
@@ -127,7 +129,7 @@ button{
 
 
 .btn--primary {
-  color: white;
+  color: #ede7e0;
 background-color: black;
 }
 
@@ -146,9 +148,9 @@ color: black;
 
 
 .btn--primary.light{
-  background-color: #fff;
+  background-color: #ede7e0;
   color:black;
-  border:2px #fff solid;
+  border:2px #ede7e0 solid;
 }
 
 .btn--secondary.light{

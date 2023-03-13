@@ -50,7 +50,7 @@ background-color:var(--main-color);
     transition: 300ms;
     border-radius: .1rem;
     margin:0 0.5rem;
-    color: white;
+    color: #ede7e0;
     border:1px solid #ffffff00;
 }
 .links_container a:hover {

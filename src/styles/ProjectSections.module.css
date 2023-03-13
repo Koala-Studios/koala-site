@@ -14,9 +14,7 @@
 .title_image img{
     filter: brightness(1) saturate(1.1);
     height: 100%;
-    /* width: 100vw; */
-    /* border-radius: 1.1rem 1.1rem 0 0; */
-    /* box-shadow: 0 0 40px 5px black; */
+    
     transition: 2000ms;
 }
 

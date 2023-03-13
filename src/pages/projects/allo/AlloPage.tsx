@@ -2,6 +2,7 @@ import React from "react";
 import project from "../../../assets/projects/allo.json";
 import Footer from "../../../components/sections/Footer";
 import ImageWithText from "../../../components/sections/ImageWithText";
+import NextProject from "../../../components/sections/NextProject";
 import ProjectHero from "../../../components/sections/ProjectHero";
 import ScrollingText from "../../../components/sections/ScrollingText";
 import TitleWithText from "../../../components/sections/TitleWithText";
@@ -31,20 +32,20 @@ const AlloPage = () => {
         text={
           "Allo Nutrition is a Toronto-based company offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
         }
-        width={""}
+        width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
 
       <ImageWithText
         image_placement={"left"}
-        src={"../images/project/allo/vanilla_noncreamer.webp"}
+        src={"../images/project/allo/hazelnut_creamer.webp"}
         alt={""}
         title={"How did we Help?"}
         text={
           "Allo's vision was to create a unique digital experience that would allow users to understand and appreciate their innovative products. To achieve this, we helped Allo design and launch a website that goes beyond just providing product information. We worked closely with Allo to understand their brand and their goals, and crafted a website that truly represents their values and ethos. "
         }
-        width={""}
+        width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       ></ImageWithText>
@@ -125,6 +126,7 @@ const AlloPage = () => {
         {" "}
         Desktop Product Page
       </p>
+      <NextProject next_link={`/projects/${project.next_handle}`} />
       <Footer></Footer>
     </div>
   );
