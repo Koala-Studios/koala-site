@@ -14,6 +14,8 @@ const ServicesSection = () => {
       <GradientHero
         gradient="linear-gradient(45deg, #2e2b38, #5c3b3b, #2d5448)"
         title="Our Services"
+        bg_color="#0d0d0d"
+        height="500px"
       />
       <ScrollingText
         TextArray={[
