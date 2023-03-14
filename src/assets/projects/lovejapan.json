@@ -8,8 +8,8 @@
     "bg_color":"#1a1714",
     "text_color":"#ede7e0",
     "logo_color":"#d4a363",
-    "hero_image":"/images/project/allo/allo_image_wide.jpg",
-    "hero_image_mobile":"/images/project/allo_list.png",
+    "hero_image":"/images/project/lovejapan/lovejapan_hero.jpg",
+    "hero_image_mobile":"/images/project/lovejapan/lovejapan_hero.jpg",
     "chips":[1,2],
     "site_link":"https://lovejapanforlife.com"
 }
