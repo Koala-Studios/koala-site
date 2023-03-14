@@ -13,13 +13,12 @@ interface Props {
   styles?: any;
   textColor?: string;
   subtitle?: any;
-  dataSpeed?:number;
+  dataSpeed?: number;
 }
 
-
 const ImageWithText: React.FC<Props> = (props) => {
-  
-  const dataSpeed = props.dataSpeed ? props.dataSpeed : 1.1;
+  const dataSpeed = props.dataSpeed !== 0 ? props.dataSpeed : 1.1;
+
   return (
     <section
       style={props.styles}

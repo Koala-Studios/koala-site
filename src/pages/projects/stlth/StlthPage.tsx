@@ -11,9 +11,6 @@ import TitleWithText from "../../../components/sections/TitleWithText";
 import VideoWithText from "../../../components/sections/VideoWithText";
 
 const StlthPage = () => {
-
-  const dataSpeed = 1.2;
-
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
       <ProjectHero project={project} />
@@ -71,8 +68,15 @@ const StlthPage = () => {
         height={""}
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
-      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: 32, marginBottom:50}}> Our Results</h2>
-      <video data-speed={1.1}
+      <h2
+        data-speed={1.1}
+        style={{ color: "#ede7e0", fontSize: 32, marginBottom: 50 }}
+      >
+        {" "}
+        Our Results
+      </h2>
+      <video
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           maxHeight: "90vh",
@@ -84,10 +88,14 @@ const StlthPage = () => {
       >
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
-      <h2 data-speed={1.1} style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}>
+      <h2
+        data-speed={1.1}
+        style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}
+      >
         Before and After
       </h2>
-      <div data-speed={1.1}
+      <div
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -119,7 +127,8 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div data-speed={1.1}
+      <div
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -151,7 +160,8 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div data-speed={1.1}
+      <div
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -194,6 +204,7 @@ const StlthPage = () => {
           width={"40%"}
           height={""}
           imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
+          dataSpeed={0.1}
         ></ImageWithText>
       </div>
 

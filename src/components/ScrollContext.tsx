@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Scrollbar from "smooth-scrollbar";
+import { ScrollStatus } from "smooth-scrollbar/interfaces";
 
 // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -45,6 +46,28 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
     console.log("hello");
     const scrollbar = Scrollbar.init(smoother.current, options);
     scrollbar.scrollTo(0, 0);
+
+    const dataSpeedEls = smoother.current.querySelectorAll(
+      "[data-speed]:not([data-value='0']"
+    );
+
+    console.log(dataSpeedEls);
+    for (let i = 0; i < dataSpeedEls.length; i++) {
+      const el = dataSpeedEls[i];
+      el.style.transitionDuration = "100ms";
+    }
+
+    scrollbar.addListener((scroll: ScrollStatus) => {
+      for (let i = 0; i < dataSpeedEls.length; i++) {
+        const el = dataSpeedEls[i];
+        const dataSpeed = el.getAttribute("data-speed");
+        const rect = el.getBoundingClientRect();
+        // console.log(rect.top - scroll.offset.y);
+        el.style.transform = `translateY(${
+          dataSpeed * ((rect.bottom - scroll.offset.y) / 40)
+        }px)`;
+      }
+    });
   }, [location.key]);
 
   return (
