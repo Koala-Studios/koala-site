@@ -92,7 +92,7 @@
   margin-top: -1rem;
   justify-content: flex-end;
   background-size: 200% 200%!important;
-  animation: gradient 10s ease-in-out infinite;
+  animation: gradient 7s ease-in-out infinite;
 }
 
 @keyframes gradient {
