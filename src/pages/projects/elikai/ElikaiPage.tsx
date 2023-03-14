@@ -10,10 +10,12 @@ import VideoWithText from "../../../components/sections/VideoWithText";
 import styles from "../../../styles/ProjectSections.module.css";
 
 const ElikaiPage = () => {
-
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
-      <ProjectHero project={project} />
+      <ProjectHero
+        project={project}
+        bg_color="linear-gradient(45deg, #2e1f2e, #202944, #625c51)"
+      />
 
       <ScrollingText
         TextArray={[
