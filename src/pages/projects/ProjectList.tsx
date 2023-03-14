@@ -82,7 +82,6 @@ const TitleSection = () => {
 
   useEffect(() => {
     // setAnim(true);
-    window.scrollTo(0, 0);
     setTimeout(() => {
       setAnim(true);
     }, 3100);
