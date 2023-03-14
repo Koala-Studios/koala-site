@@ -6,11 +6,13 @@ interface Props {
   LargeText: string;
   SmallText: string;
   UnderText?: ReactElement;
+  dataLag?:number;
 }
 
-const StatBadge: React.FC<Props> = ({ LargeText, SmallText, UnderText }) => {
+const StatBadge: React.FC<Props> = ({ LargeText, SmallText, UnderText, dataLag }) => {
+  const data_lag = dataLag ? dataLag : 0;
   return (
-    <div>
+    <div data-lag={data_lag}>
       <div className={styles.stat_badge}>
         <div>
           <span style={{ fontSize: 35 }}>{LargeText}</span>

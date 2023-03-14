@@ -11,7 +11,8 @@ import TitleWithText from "../../../components/sections/TitleWithText";
 import VideoWithText from "../../../components/sections/VideoWithText";
 
 const StlthPage = () => {
-  console.log(project);
+
+  const dataSpeed = 1.2;
 
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
@@ -41,9 +42,7 @@ const StlthPage = () => {
         <p>
           STLTH's founders were introduced to vaping products almost a decade
           ago and it helped them transition away from traditional cigarettes,
-          which confirmed their belief in the potential of vaping systems. Their
-          mission is to provide an alternative to traditional tobacco products
-          for adult smokers.
+          which confirmed their belief in the potential of vaping systems.
           <br />
           <br /> STLTH uses analytical machinery to develop and maintain less
           harmful products and is a leader in compliance, consulting third-party
@@ -72,8 +71,8 @@ const StlthPage = () => {
         height={""}
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
-      <h2 style={{ color: "#ede7e0", fontSize: 32 }}> Our Results</h2>
-      <video
+      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: 32, marginBottom:50}}> Our Results</h2>
+      <video data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           maxHeight: "90vh",
@@ -85,10 +84,10 @@ const StlthPage = () => {
       >
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
-      <h2 style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}>
+      <h2 data-speed={1.1} style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}>
         Before and After
       </h2>
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -120,7 +119,7 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -152,7 +151,7 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,

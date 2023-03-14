@@ -152,7 +152,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 6s ease infinite;
 }
 
 @keyframes gradient {

@@ -13,9 +13,13 @@ interface Props {
   styles?: any;
   textColor?: string;
   subtitle?: any;
+  dataSpeed?:number;
 }
 
+
 const ImageWithText: React.FC<Props> = (props) => {
+  
+  const dataSpeed = props.dataSpeed ? props.dataSpeed : 1.1;
   return (
     <section
       style={props.styles}
@@ -23,7 +27,7 @@ const ImageWithText: React.FC<Props> = (props) => {
         props.image_placement == "left" ? styles.left : ""
       }`}
     >
-      <div data-speed="1.1" className={styles.image_with_text_info}>
+      <div data-speed={dataSpeed} className={styles.image_with_text_info}>
         <h2 style={{ color: props.textColor }}>{props.title}</h2>
         {props.subtitle && (
           <div

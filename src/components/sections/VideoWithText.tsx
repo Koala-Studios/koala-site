@@ -13,7 +13,9 @@ interface Props {
   textColor?: string;
   loop?: boolean;
   subtitle?: any;
+  dataSpeed?: number;
 }
+
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -32,6 +34,8 @@ const observer = new IntersectionObserver(
 );
 
 const VideoWithText: React.FC<Props> = (props) => {
+  
+  const dataSpeed = props.dataSpeed ? props.dataSpeed : 1.1;
   const videoRef = useRef<any>();
 
   useEffect(() => {
@@ -51,7 +55,7 @@ const VideoWithText: React.FC<Props> = (props) => {
         props.video_placement === "left" ? styles.left : ""
       }`}
     >
-      <div data-speed="1.1" className={styles.image_with_text_info}>
+      <div data-speed={dataSpeed} className={styles.image_with_text_info}>
         <h2 style={{ color: props.textColor }}>{props.title}</h2>
         {props.subtitle && (
           <div

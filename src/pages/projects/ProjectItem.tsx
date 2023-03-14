@@ -117,7 +117,6 @@ const ProjectItem: React.FC<Props> = ({
   };
 
   const handleAwake = () => {
-    console.log("hello");
   };
 
   useFrame(({ scene, camera }) => {

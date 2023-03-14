@@ -16,11 +16,12 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("sdfa");
     smoother.current = ScrollSmoother.create({
       smooth: 1, // seconds it takes to "catch up" to native scroll position
       effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
     });
+    smoother.current.scrollTop(0);
+    
   }, [location.key]);
 
   return (
