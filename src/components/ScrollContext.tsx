@@ -57,15 +57,25 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
       el.style.transitionDuration = "100ms";
     }
 
-    scrollbar.addListener((scroll: ScrollStatus) => {
-      for (let i = 0; i < dataSpeedEls.length; i++) {
-        const el = dataSpeedEls[i];
-        const dataSpeed = el.getAttribute("data-speed");
-        const rect = el.getBoundingClientRect();
-        // console.log(rect.top - scroll.offset.y);
-        el.style.transform = `translateY(${
-          dataSpeed * ((rect.bottom - scroll.offset.y) / 40)
-        }px)`;
+    //@ts-ignore
+    navigator.getBattery().then(function (battery) {
+      if (battery.charging && battery.chargingTime === 0) {
+        console.log("desktop");
+
+        scrollbar.addListener((scroll: ScrollStatus) => {
+          for (let i = 0; i < dataSpeedEls.length; i++) {
+            const el = dataSpeedEls[i];
+            const dataSpeed = el.getAttribute("data-speed");
+            const rect = el.getBoundingClientRect();
+            // console.log(rect.top - scroll.offset.y);
+            el.style.transform = `translateY(${
+              dataSpeed * ((rect.bottom - scroll.offset.y) / 40)
+            }px)`;
+          }
+        });
+      } else {
+        console.log("not desktop");
+        return;
       }
     });
   }, [location.key]);
