@@ -82,7 +82,7 @@ const AlloPage = () => {
         </p>
       </ImageWithText>
 
-      <h2 style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
+      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
       <div data-speed={1.1}
         style={{
@@ -94,6 +94,7 @@ const AlloPage = () => {
           color: "#ede7e0",
           fontSize: 13,
           marginTop: 50,
+          marginBottom:80
         }}
       >
         <StatBadge
@@ -110,9 +111,9 @@ const AlloPage = () => {
             </Link>
           }
         />
-        <StatBadge LargeText="1 Year" SmallText="Since Launch" />
-        <StatBadge LargeText="+300,000" SmallText="Sessions" />
-        <StatBadge LargeText="14" SmallText="Coffees Spilled" />
+        <StatBadge dataLag={0.05} LargeText="1 Year" SmallText="Since Launch" />
+        <StatBadge dataLag={0.1} LargeText="+300,000" SmallText="Sessions" />
+        <StatBadge dataLag={0.15} LargeText="14" SmallText="Coffees Spilled" />
       </div>
       <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom:50 }}>Featured</h2>
 
@@ -138,18 +139,18 @@ const AlloPage = () => {
       <p style={{ color: "#ede7e0", marginBottom: 50 }}>
         Scrolling video in home page
       </p>
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
-          marginTop: 25,
-          marginBottom: 50,
+          marginTop: 80,
+          marginBottom: 80,
           width: "100%",
           gap: 15,
           display: "flex",
           justifyContent: "space-between",
         }}
       >
-        <div>
+        <div data-lag={0.15}>
           <img
             style={{ borderRadius: "1rem", width: "100%" }}
             src="..\images\project\allo\allo-shop-page.png"
@@ -157,7 +158,7 @@ const AlloPage = () => {
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}>Shop Page</p>
         </div>
-        <div>
+        <div data-lag={0.1}>
           <img
             style={{ borderRadius: "1rem", width: "100%" }}
             src="..\images\project\allo\allo-creamer-product-page.png"
@@ -168,7 +169,7 @@ const AlloPage = () => {
             Mobile Product Page
           </p>
         </div>
-        <div>
+        <div >
           <img
             style={{ borderRadius: "1rem", width: "100%" }}
             src="..\images\project\allo\variety-pack-mobile.png"

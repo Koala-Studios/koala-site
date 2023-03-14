@@ -82,9 +82,9 @@ const LoveJapan = () => {
         </div>
       </TitleWithText>
 
-      <h2 style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
+      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           display: "flex",
@@ -94,21 +94,21 @@ const LoveJapan = () => {
           color: "#ede7e0",
           fontSize: 13,
           marginTop: 50,
-          marginBottom: 150,
+          marginBottom: 80,
         }}
       >
-        <StatBadge
+        <StatBadge 
           LargeText="+159%"
           SmallText="Conversion Rate"
           UnderText={<div>From 0.8%</div>}
         />
-        <StatBadge
+        <StatBadge dataLag={0.05}
           LargeText="+216% "
           SmallText="Sessions"
           UnderText={<div>From +100,000 Sessions</div>}
         />
-        <StatBadge LargeText="+652%" SmallText="Revenue" />
-        <StatBadge LargeText="16" SmallText="Ramens Consumed" />
+        <StatBadge dataLag={0.1} LargeText="+652%" SmallText="Revenue" />
+        <StatBadge dataLag={0.15} LargeText="16" SmallText="Ramens Consumed" />
       </div>
       <TitleWithText orientation={"horizontal"} title={"Conclusion"}>
         <div
