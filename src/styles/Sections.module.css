@@ -129,10 +129,12 @@ margin-right: 2rem;
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    border:2px solid white;
-    height:45px;
-    width: 200px;
+    border:2px solid #ede7e077;
+    padding: 8px 25px;
+    width: fit-content;
     border-radius: 25px;
+    margin-top: 10px;
+    font-size: 12px;
 }
 .subtitle_pill div {
     width:100%;
