@@ -34,22 +34,32 @@ const StlthPage = () => {
         title={"Who is Stlth?"}
         subtitle={"E-cigarette"}
         loop={false}
-        text={
-          "STLTH's founders were introduced to vaping products almost a decade ago and it helped them transition away from traditional cigarettes, which confirmed their belief in the potential of vaping systems. Their mission is to provide an alternative to traditional tobacco products for adult smokers. STLTH uses analytical machinery to develop and maintain less harmful products and is a leader in compliance, consulting third-party labs regularly to validate their methods and results."
-        }
         width="40%"
         height="40%"
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       >
-        <Link style={{width:'fit-content', display:'block'}} to={project.site_link} target="_blank">
-            <Button
-              type={"primary light"}
-            >
+        <p>
+          STLTH's founders were introduced to vaping products almost a decade
+          ago and it helped them transition away from traditional cigarettes,
+          which confirmed their belief in the potential of vaping systems. Their
+          mission is to provide an alternative to traditional tobacco products
+          for adult smokers.
+          <br />
+          <br /> STLTH uses analytical machinery to develop and maintain less
+          harmful products and is a leader in compliance, consulting third-party
+          labs regularly to validate their methods and results.
+        </p>
+        <Link
+          style={{ width: "fit-content", display: "block" }}
+          to={project.site_link}
+          target="_blank"
+        >
+          <Button type={"primary light"}>
             View Live Site
-            </Button>
-          </Link>
+            <img src="../images/cta_link_black.png" height="12" width="12" />
+          </Button>
+        </Link>
       </VideoWithText>
-
 
       <VideoWithText
         video_placement={"left"}
@@ -67,8 +77,7 @@ const StlthPage = () => {
         style={{
           padding: "var(--global-padding)",
           maxHeight: "90vh",
-          marginTop: 25,
-          marginBottom: 150,
+          marginBottom: 50,
         }}
         loop
         autoPlay
@@ -76,8 +85,8 @@ const StlthPage = () => {
       >
         <source src="..\images\project\stlth\2023-03-10_18-48-45-2x-RIFE-RIFE4.0-120fps.mp4"></source>
       </video>
-      <h2 style={{ color: "#ede7e0", marginBottom: 100, fontSize: 32 }}>
-        Gallery
+      <h2 style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}>
+        Before and After
       </h2>
       <div
         style={{
@@ -174,19 +183,19 @@ const StlthPage = () => {
           <p style={{ color: "#ede7e0", marginTop: 15 }}>New Cart</p>
         </div>
       </div>
-      <div style={{marginBottom:150}}>
-      <ImageWithText
-        src="..\images\project\stlth\stlth-device.jpg"
-        alt=""
-        image_placement={"right"}
-        title={"Conclusion"}
-        text={
-          "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
-        }
-        width={"40%"}
-        height={""}
-        imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
-      ></ImageWithText>
+      <div style={{ marginBottom: 150 }}>
+        <ImageWithText
+          src="..\images\project\stlth\stlth-device.jpg"
+          alt=""
+          image_placement={"right"}
+          title={"Client Success"}
+          text={
+            "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
+          }
+          width={"40%"}
+          height={""}
+          imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
+        ></ImageWithText>
       </div>
 
       <NextProject next_link={`/projects/${project.next_handle}`} />

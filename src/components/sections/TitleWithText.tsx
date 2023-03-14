@@ -3,7 +3,7 @@ import styles from "../../styles/Sections.module.css";
 interface Props {
   orientation: "vertical" | "horizontal";
   title: string;
-  text: string;
+  text?: string;
   children: any;
 }
 
@@ -16,7 +16,7 @@ const TitleWithText: React.FC<Props> = (props) => {
     >
       <h2>{props.title}</h2>
       <div className="paragraph-container">
-        <p>{props.text}</p>
+        {props.text && <p>{props.text}</p>}
         {props.children}
       </div>
     </section>

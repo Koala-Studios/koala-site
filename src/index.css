@@ -49,8 +49,12 @@ body {
 p{
   font-family: "Poppins-Regular";
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   color: #ede7e0;
+}
+
+h2{
+  font-size: 2.5rem!important;
 }
 
 h1,h2,h3,h4 {

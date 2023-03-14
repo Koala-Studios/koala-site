@@ -1,3 +1,18 @@
+.gallery_images{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery_images img{
+ max-height: 90vh;
+ width: auto;
+ border-radius: 0.5rem;
+}
+
 .title_image{
     /* height: 100%; */
     /* width: auto; */
@@ -85,21 +100,60 @@
 }
 
 .scroll_indicator{
-    z-index: 100;
-	width:20px;
-	height:35px;
-	border-radius: 10px;
-	box-shadow: 0 0 0 1px black;
+    margin-left: 1rem;
+    text-align: center!important;
+    position: fixed;
+    width: 100%;
+    /* left: 0; */
+    bottom: 1rem;
+    color: #ede7e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1000ms;
+    font-size: 13px;
+    opacity: 0;
 }
-.scroll_indicator::before{
-	content:'';
-	position: absolute;
-	width:5px;
-	height:5px;
-	border-radius: 10px;
-	background-color: black;
-	margin: 8px 8px;
-	animation: scrolldown-animation 1s ease-in-out infinite;
+
+.scroll_indicator.show{
+    opacity: 1;
+
+}
+
+.scroll_wheel{
+    width: 20px;
+    height: 34px;
+    min-height: 30px;
+    border:2px solid #ede7e0;
+    border-radius: 20px;
+    position: relative;
+}
+
+.scroll_wheel::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #ede7e0;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 4px;
+    left: 5.5px;
+    animation: scroll-wheel-anim 1.5s infinite;
+}
+
+
+@keyframes scroll-wheel-anim {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
 
 .hero_container.dark .hero_info{
@@ -109,10 +163,10 @@
 
 
 .stat_badge {
-    max-width: 200px;
-    width: 200px;
-    max-height: 200px;
-    height: 200px;
+    max-width: 220px;
+    width: 220px;
+    max-height: 220px;
+    height: 220px;
     border: 2px solid  #939a96c2;
     border-radius: 50%;
     margin-bottom:15px;

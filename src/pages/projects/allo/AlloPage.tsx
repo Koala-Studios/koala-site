@@ -53,7 +53,10 @@ const AlloPage = () => {
             to={project.site_link}
             target="_blank"
           >
-            <Button type={"primary light"}>View Live Site</Button>
+            <Button type={"primary light"}>
+              View Live Site
+              <img src="../images/cta_link_black.png" height="12" width="12" />
+            </Button>
           </Link>
         </div>
       </ImageWithText>
@@ -63,13 +66,21 @@ const AlloPage = () => {
         src={"../images/project/allo/hazelnut_creamer.webp"}
         alt={""}
         title={"How did we Help?"}
-        text={
-          "Allo's vision was to create a unique digital experience that would allow users to understand and appreciate their innovative products. To achieve this, we helped Allo design and launch a website that goes beyond just providing product information. We worked closely with Allo to understand their brand and their goals, and crafted a website that truly represents their values and ethos. "
-        }
         width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
-      ></ImageWithText>
+      >
+        <p>
+          Allo's vision was to create a unique digital experience that would
+          allow users to understand and appreciate their innovative products. To
+          achieve this, we helped Allo design and launch a website that goes
+          beyond just providing product information.
+          <br />
+          <br /> We worked closely with Allo to understand their brand and their
+          goals, and crafted a website that truly represents their values and
+          ethos.
+        </p>
+      </ImageWithText>
 
       <h2 style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
@@ -103,10 +114,7 @@ const AlloPage = () => {
         <StatBadge LargeText="+300,000" SmallText="Sessions" />
         <StatBadge LargeText="14" SmallText="Coffees Spilled" />
       </div>
-      <h2 style={{ color: "#ede7e0", marginTop: 150, fontSize: "2rem" }}>
-        {" "}
-        Gallery{" "}
-      </h2>
+      <h2 style={{ color: "#ede7e0", marginTop: 60 }}>Featured</h2>
 
       <div
         style={{
@@ -116,8 +124,6 @@ const AlloPage = () => {
         <video
           style={{
             maxWidth: "100%",
-            marginTop: 25,
-            marginBottom: 25,
             borderRadius: "1rem",
             border: "2px solid #282420",
           }}

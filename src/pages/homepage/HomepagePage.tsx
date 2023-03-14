@@ -41,7 +41,7 @@ const HomepagePage = () => {
       </VideoWithText>
       <VideoWithText
         video_placement="left"
-        src="/videos/3dbag_in_2.mp4"
+        src="/videos/3dbag_in2.mp4"
         title="Why is a well presented store important"
         text="A more professional and easier experience for your customers will increase conversion rates and brand awareness inmensly. Koala Studios specializes on user experience that is proven to get results"
         width="40%"

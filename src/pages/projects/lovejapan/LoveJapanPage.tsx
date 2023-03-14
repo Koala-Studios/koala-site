@@ -34,7 +34,6 @@ const LoveJapan = () => {
         alt={""}
         title={"About LoveJapan4Life"}
         subtitle={"Clothing & Apparel"}
-        text={""}
         width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem", border: "2px solid #ede7e0" }}
@@ -55,14 +54,13 @@ const LoveJapan = () => {
           to={project.site_link}
           target="_blank"
         >
-          <Button type={"primary light"}>View Live Site</Button>
+          <Button type={"primary light"}>
+            View Live Site{" "}
+            <img src="../images/cta_link_black.png" height="12" width="12" />
+          </Button>
         </Link>
       </ImageWithText>
-      <TitleWithText
-        orientation={"horizontal"}
-        title={"How did we help?"}
-        text={""}
-      >
+      <TitleWithText orientation={"horizontal"} title={"How did we help?"}>
         <div
           style={{
             display: "flex",
@@ -71,13 +69,14 @@ const LoveJapan = () => {
             textAlign: "left",
           }}
         >
-          <p style={{ maxWidth: 600 }}>
+          <p style={{ maxWidth: 800, fontSize: 25 }}>
             After conducting a thorough analysis, we were able to pinpoint the
             most pressing issues and devised a comprehensive plan to address
             them. Leveraging insights from our analytics data, we identified the
             key bottlenecks in the customer conversion process and formulated
-            targeted solutions to improve the client's website. <br/><br/>By working
-            closely with the client, we provided a clear roadmap for
+            targeted solutions to improve the client's website. <br />
+            <br />
+            By working closely with the client, we provided a clear roadmap for
             implementing these changes, which led to a significant boost in
             performance.
           </p>
@@ -112,11 +111,7 @@ const LoveJapan = () => {
         <StatBadge LargeText="+652%" SmallText="Revenue" />
         <StatBadge LargeText="16" SmallText="Ramens Served" />
       </div>
-      <TitleWithText
-        orientation={"horizontal"}
-        title={"Conclusion"}
-        text={""}
-      >
+      <TitleWithText orientation={"horizontal"} title={"Conclusion"}>
         <div
           style={{
             display: "flex",
@@ -125,7 +120,7 @@ const LoveJapan = () => {
             textAlign: "left",
           }}
         >
-          <p style={{ maxWidth: 600 }}>
+          <p style={{ maxWidth: 800 }}>
             Thanks to our collaborative efforts, the client was able to
             successfully execute most of the recommended modifications,
             resulting in a host of positive outcomes. These included increased

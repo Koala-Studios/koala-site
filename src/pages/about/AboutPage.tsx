@@ -31,7 +31,6 @@ const AlloPage = () => {
         src={"../images/project/allo/vanilla_noncreamer.webp"}
         alt={""}
         title={"Our Mission"}
-        text={""}
         width={""}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}

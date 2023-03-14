@@ -11,9 +11,19 @@ interface Props {
 
 const ProjectHero: React.FC<Props> = ({ project, title }) => {
   const [animate, setAnimate] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const location = useLocation();
 
+  const setScroll = () => {
+    if (hasScrolled === false) {
+      setHasScrolled(true);
+      document.removeEventListener("scroll", setScroll);
+    }
+  };
+
   useEffect(() => {
+    document.addEventListener("scroll", setScroll);
+
     if (animate == false) {
       window.scrollTo(0, 0);
 
@@ -34,9 +44,14 @@ const ProjectHero: React.FC<Props> = ({ project, title }) => {
         <img className={styles.hero_image} src={project.hero_image} />
       </div>
 
-      {/* <div className={styles.scroll_container}>
-        <div className={styles.scroll_indicator}></div>
-      </div> */}
+      <div
+        className={`${styles.scroll_indicator} ${
+          !hasScrolled && animate ? styles.show : ""
+        }`}
+      >
+        {/* <p>Scroll to Discover</p> */}
+        <div className={styles.scroll_wheel}></div>
+      </div>
     </div>
   );
 };

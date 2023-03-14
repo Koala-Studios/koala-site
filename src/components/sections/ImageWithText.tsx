@@ -24,17 +24,17 @@ const ImageWithText: React.FC<Props> = (props) => {
       }`}
     >
       <div className={styles.image_with_text_info}>
-      <h2 style={{ color: props.textColor }}>{props.title}</h2>
-       {props.subtitle &&
-       <div className={styles.subtitle_pill} style={{ color: props.textColor }}>
-         <div>
-          {props.subtitle}
-         </div>
-        </div> 
-        }
+        <h2 style={{ color: props.textColor }}>{props.title}</h2>
+        {props.subtitle && (
+          <div
+            className={styles.subtitle_pill}
+            style={{ color: props.textColor }}
+          >
+            {props.subtitle}
+          </div>
+        )}
 
-
-        <p style={{ color: props.textColor }}>{props.text}</p>
+        {props.text && <p style={{ color: props.textColor }}>{props.text}</p>}
         {props.children}
       </div>
       <img

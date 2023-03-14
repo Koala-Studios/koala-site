@@ -25,7 +25,6 @@
     text-align: left;
 }
 .image_with_text_info h2{
-    font-size: 2rem;
     margin-bottom: 0;
 }
 .image_with_text_info p{
@@ -133,13 +132,12 @@ margin-right: 2rem;
     padding: 8px 25px;
     width: fit-content;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
+    white-space: nowrap;
     font-size: 12px;
-}
-.subtitle_pill div {
-    width:100%;
     text-align: center;
 }
+
 
 @keyframes scroll-left {
     0% {
