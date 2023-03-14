@@ -82,6 +82,7 @@ const TitleSection = () => {
 
   useEffect(() => {
     // setAnim(true);
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setAnim(true);
     }, 3100);
@@ -92,7 +93,7 @@ const TitleSection = () => {
       <div className="title-section">
         <h1 className="title-el">
           {title.split("|").map((l, idx) => {
-            return <span>{l}</span>;
+            return <span key={idx}>{l}</span>;
           })}
         </h1>
       </div>
