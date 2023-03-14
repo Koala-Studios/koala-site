@@ -36,7 +36,7 @@ const ElikaiPage = () => {
               imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }} alt={""}>
         
       </ImageWithText>
-
+{/* 
       <ImageWithText
         image_placement={"left"}
         src={"../images/project/allo/hazelnut_creamer.webp"}
@@ -48,7 +48,7 @@ const ElikaiPage = () => {
         width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
-      ></ImageWithText>
+      ></ImageWithText> */}
 
       <h2 style={{ color: "#ede7e0", fontSize:32, marginBottom:150 }}> Gallery</h2>
 
