@@ -109,7 +109,7 @@ const LoveJapan = () => {
           UnderText={<div>From +100,000 Sessions</div>}
         />
         <StatBadge LargeText="+652%" SmallText="Revenue" />
-        <StatBadge LargeText="16" SmallText="Ramens Served" />
+        <StatBadge LargeText="16" SmallText="Ramens Consumed" />
       </div>
       <TitleWithText orientation={"horizontal"} title={"Conclusion"}>
         <div
