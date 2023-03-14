@@ -19,32 +19,27 @@ interface Props {
 const Navbar: React.FC<Props> = (props) => {
   // const user = useAuth();
 
-  const mainContext = useContext(MainContext);
+  // const mainContext = useContext(MainContext);
 
   const [menuLinkActive, setMenuLinkActive] = useState(false);
 
-  useEffect(() => {
-    // TODO:Add checks to improve performance
-    console.log(props.navbarFull);
-    if (props.navbarFull == false) {
-      document.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          mainContext.SetContext({ navbarTransparent: false });
-        } else {
-          mainContext.SetContext({ navbarTransparent: true });
-        }
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   // TODO:Add checks to improve performance
+  //   console.log(props.navbarFull);
+  //   if (props.navbarFull == false) {
+  //     document.addEventListener("scroll", () => {
+  //       if (window.scrollY > 200) {
+  //         mainContext.SetContext({ navbarTransparent: false });
+  //       } else {
+  //         mainContext.SetContext({ navbarTransparent: true });
+  //       }
+  //     });
+  //   }
+  // }, []);
 
   return (
     <nav
-      className={`${styles.navbar} ${
-        props.navbarFull == true ||
-        mainContext.Context.navbarTransparent == false
-          ? styles.light
-          : ""
-      }`}
+      className={styles.navbar}
     >
       <Link className={styles.logo} to="/">
         <img

@@ -10,7 +10,6 @@ import VideoWithText from "../../../components/sections/VideoWithText";
 import styles from "../../../styles/ProjectSections.module.css";
 
 const ElikaiPage = () => {
-  console.log(project);
 
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>

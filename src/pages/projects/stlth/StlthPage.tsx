@@ -11,7 +11,6 @@ import TitleWithText from "../../../components/sections/TitleWithText";
 import VideoWithText from "../../../components/sections/VideoWithText";
 
 const StlthPage = () => {
-  console.log(project);
 
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
@@ -41,9 +40,7 @@ const StlthPage = () => {
         <p>
           STLTH's founders were introduced to vaping products almost a decade
           ago and it helped them transition away from traditional cigarettes,
-          which confirmed their belief in the potential of vaping systems. Their
-          mission is to provide an alternative to traditional tobacco products
-          for adult smokers.
+          which confirmed their belief in the potential of vaping systems.
           <br />
           <br /> STLTH uses analytical machinery to develop and maintain less
           harmful products and is a leader in compliance, consulting third-party

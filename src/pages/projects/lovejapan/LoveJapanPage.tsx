@@ -12,7 +12,6 @@ import styles from "../../../styles/ProjectSections.module.css";
 import StatBadge from "../StatBadge";
 
 const LoveJapan = () => {
-  console.log(project);
 
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
