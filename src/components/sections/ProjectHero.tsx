@@ -7,9 +7,10 @@ import { useLocation } from "react-router-dom";
 interface Props {
   project: IProjectPage;
   title?: any;
+  bg_color?: string;
 }
 
-const ProjectHero: React.FC<Props> = ({ project, title }) => {
+const ProjectHero: React.FC<Props> = ({ project, title, bg_color }) => {
   const [animate, setAnimate] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const location = useLocation();
@@ -34,7 +35,10 @@ const ProjectHero: React.FC<Props> = ({ project, title }) => {
   }, [location.key]);
 
   return (
-    <div className={`${styles.hero_container} ${animate ? styles.dark : ""}`}>
+    <div
+      style={{ background: bg_color }}
+      className={`${styles.hero_container} ${animate ? styles.dark : ""}`}
+    >
       <div className={styles.hero_info}>
         <img src={project.logo} />
         {title}
