@@ -41,9 +41,10 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
   const smoother = useRef<any>();
 
   useEffect(() => {
+    if (!smoother.current) return;
     console.log("hello");
-    Scrollbar.init(smoother.current, options);
-    // window.scrollTo(0, 0);
+    const scrollbar = Scrollbar.init(smoother.current, options);
+    scrollbar.scrollTo(0, 0);
   }, [location.key]);
 
   return (
