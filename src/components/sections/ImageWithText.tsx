@@ -23,7 +23,7 @@ const ImageWithText: React.FC<Props> = (props) => {
         props.image_placement == "left" ? styles.left : ""
       }`}
     >
-      <div data-speed="1.2" className={styles.image_with_text_info}>
+      <div data-speed="1.1" className={styles.image_with_text_info}>
         <h2 style={{ color: props.textColor }}>{props.title}</h2>
         {props.subtitle && (
           <div
