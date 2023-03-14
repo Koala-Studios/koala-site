@@ -82,9 +82,13 @@ const AlloPage = () => {
         </p>
       </ImageWithText>
 
-      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
+      <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: "2rem" }}>
+        {" "}
+        Our Results
+      </h2>
 
-      <div data-speed={1.1}
+      <div
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           display: "flex",
@@ -94,7 +98,7 @@ const AlloPage = () => {
           color: "#ede7e0",
           fontSize: 13,
           marginTop: 50,
-          marginBottom:80
+          marginBottom: 80,
         }}
       >
         <StatBadge
@@ -107,7 +111,7 @@ const AlloPage = () => {
                 "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
               }
             >
-              (vs 2022 Avg 1.4%)
+              (vs 2022 Shopify Avg 1.4%)
             </Link>
           }
         />
@@ -115,7 +119,9 @@ const AlloPage = () => {
         <StatBadge dataLag={0.1} LargeText="+300,000" SmallText="Sessions" />
         <StatBadge dataLag={0.15} LargeText="14" SmallText="Coffees Spilled" />
       </div>
-      <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom:50 }}>Featured</h2>
+      <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom: 50 }}>
+        Featured
+      </h2>
 
       <div
         style={{
@@ -139,7 +145,8 @@ const AlloPage = () => {
       <p style={{ color: "#ede7e0", marginBottom: 50 }}>
         Scrolling video in home page
       </p>
-      <div data-speed={1.1}
+      <div
+        data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 80,
@@ -169,7 +176,7 @@ const AlloPage = () => {
             Mobile Product Page
           </p>
         </div>
-        <div >
+        <div>
           <img
             style={{ borderRadius: "1rem", width: "100%" }}
             src="..\images\project\allo\variety-pack-mobile.png"
