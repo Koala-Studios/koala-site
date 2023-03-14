@@ -34,7 +34,7 @@ interface Props {
 // };
 
 var options = {
-  damping: 0.08,
+  damping: 0.11,
 };
 
 const ScrollContext: React.FC<Props> = ({ children }) => {
