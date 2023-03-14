@@ -28,10 +28,10 @@ const AlloPage = () => {
 
       <ImageWithText
         image_placement={"right"}
-        src={"../images/project/allo/vanilla_noncreamer.webp"}
+        src={"../images/koala_square.png"}
         alt={""}
         title={"Our Mission"}
-        width={""}
+        width={"40%"}
         height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >

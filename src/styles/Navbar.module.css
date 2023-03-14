@@ -52,6 +52,7 @@ background-color:var(--main-color);
     margin:0 0.5rem;
     color: #ede7e0;
     border:1px solid #ffffff00;
+    letter-spacing: 1px;
 }
 .links_container a:hover {
     background-color: #ffffff2e;

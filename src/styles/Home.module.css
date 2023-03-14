@@ -10,8 +10,9 @@
   overflow-x: hidden;
 }
 
-.hero_section{
-
+.services_section h3{
+  font-family: "Integral Regular"!important;
+  letter-spacing: 2px;
 }
 
 .title {

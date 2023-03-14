@@ -43,7 +43,7 @@ const HomepagePage = () => {
       <VideoWithText
         video_placement="left"
         src="/videos/3dbag_in2.mp4"
-        title="Why is a well presented store important"
+        title="Your Website's Look Matters"
         text=""
         width="40%"
         height="40%"
@@ -52,11 +52,15 @@ const HomepagePage = () => {
         textColor="#282420"
         loop={false}
       >
-        <p style={{color:'#282420'}}>
-        In today's world of ecommerce, having a unique website for your products is essential due to the high levels of competition.
-         Your website is the face of your business and should reflect your brand's uniqueness. <br/><br/>
-         So, whether you're just starting out or looking to revamp your existing website, 
-         we can help you create a distinct and compelling online presence that sets you apart from the competition.
+        <p style={{ color: "#282420" }}>
+          In today's world of ecommerce, having a unique website for your
+          products is essential due to the high levels of competition. Your
+          website is the face of your business and should reflect your brand's
+          uniqueness. <br />
+          <br />
+          So, whether you're just starting out or looking to revamp your
+          existing website, we can help you create a distinct and compelling
+          online presence that sets you apart from the competition.
         </p>
         <div style={{ display: "flex", gap: "1rem" }}>
           <Link to="/services">
