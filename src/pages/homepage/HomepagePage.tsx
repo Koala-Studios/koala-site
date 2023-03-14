@@ -31,6 +31,7 @@ const HomepagePage = () => {
         loop
         videoStyles={{ borderRadius: "1.5rem", border: "2px solid #d1bdad" }}
         styles={{ backgroundColor: "#181A17" }}
+        dataSpeed={1.2}
       >
         <h2 className={styles.box1_title}>
           BIG Or Small, <br /> <span>Koala Studios </span>

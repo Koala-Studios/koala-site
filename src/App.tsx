@@ -31,6 +31,7 @@ function App() {
         <ScrollContext>
           <Routes>
             <Route path="/" element={<HomepagePage />} />
+            <Route path="/projects" element={<ProjectList />} />
             <Route path="/projects/allo" element={<AlloPage />} />
             <Route path="/projects/stlth" element={<StlthPage />} />
             <Route path="/projects/lovejapan" element={<LoveJapanPage />} />
@@ -40,9 +41,6 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
           </Routes>
         </ScrollContext>
-        <Routes>
-          <Route path="/projects" element={<ProjectList />} />
-        </Routes>
       </BrowserRouter>
     </div>
   );

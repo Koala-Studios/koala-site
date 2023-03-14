@@ -12,6 +12,8 @@ import VideoWithText from "../../../components/sections/VideoWithText";
 
 const StlthPage = () => {
 
+  const dataSpeed = 1.2;
+
   return (
     <div style={{ background: project["bg_color"], overflowX: "hidden" }}>
       <ProjectHero project={project} />
@@ -70,7 +72,7 @@ const StlthPage = () => {
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
       <h2 style={{ color: "#ede7e0", fontSize: 32 }}> Our Results</h2>
-      <video
+      <video data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           maxHeight: "90vh",
@@ -85,7 +87,7 @@ const StlthPage = () => {
       <h2 style={{ color: "#ede7e0", marginBottom: 60, fontSize: 32 }}>
         Before and After
       </h2>
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -117,7 +119,7 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
+      <div data-speed={1.2}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,
@@ -149,7 +151,7 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           marginTop: 25,

@@ -84,7 +84,7 @@ const AlloPage = () => {
 
       <h2 style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
-      <div
+      <div data-speed={1.1}
         style={{
           padding: "var(--global-padding)",
           display: "flex",
@@ -114,7 +114,7 @@ const AlloPage = () => {
         <StatBadge LargeText="+300,000" SmallText="Sessions" />
         <StatBadge LargeText="14" SmallText="Coffees Spilled" />
       </div>
-      <h2 style={{ color: "#ede7e0", marginTop: 60 }}>Featured</h2>
+      <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom:50 }}>Featured</h2>
 
       <div
         style={{
