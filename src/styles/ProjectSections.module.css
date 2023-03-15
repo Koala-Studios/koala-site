@@ -255,6 +255,14 @@ cursor: pointer;
 }
 
 
+@media (max-width: 1024px) {
+    .hero_container{
+        height: 70vh;
+    }
+    .hero_container h1{
+        font-size: 1.8rem;
+    }
+}
 @media (max-width: 875px) {
 
     .stat_badge {

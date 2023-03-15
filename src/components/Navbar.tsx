@@ -38,10 +38,12 @@ const Navbar: React.FC<Props> = (props) => {
   // }, []);
 
   return (
-    <nav
-      className={styles.navbar}
-    >
-      <Link className={styles.logo} to="/">
+    <nav className={styles.navbar}>
+      <Link
+        onClick={() => setMenuLinkActive(false)}
+        className={styles.logo}
+        to="/"
+      >
         <img
           alt="Koala Studios Logo"
           src="/images/koala_logo_white.png"
@@ -55,11 +57,21 @@ const Navbar: React.FC<Props> = (props) => {
           menuLinkActive ? styles.active : ""
         }`}
       >
-        <Link to="/projects">Our Work</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/about">About Us</Link>
+        <Link onClick={() => setMenuLinkActive(false)} to="/projects">
+          Our Work
+        </Link>
+        <Link onClick={() => setMenuLinkActive(false)} to="/services">
+          Services
+        </Link>
+        <Link onClick={() => setMenuLinkActive(false)} to="/about">
+          About Us
+        </Link>
 
-        <Link to="/contact" className={styles.mobile_contact}>
+        <Link
+          onClick={() => setMenuLinkActive(false)}
+          to="/contact"
+          className={styles.mobile_contact}
+        >
           Contact Us
         </Link>
 
