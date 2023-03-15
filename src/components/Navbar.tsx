@@ -66,14 +66,17 @@ const Navbar: React.FC<Props> = (props) => {
         <Link onClick={() => setMenuLinkActive(false)} to="/about">
           About Us
         </Link>
-
+        <Link onClick={() => setMenuLinkActive(false)} to="/contact">
+          Contact Us
+        </Link>
+        {/* 
         <Link
           onClick={() => setMenuLinkActive(false)}
           to="/contact"
           className={styles.mobile_contact}
         >
           Contact Us
-        </Link>
+        </Link> */}
 
         {/* <Link href="/dashboard">
           <a className={styles.mobile_dashboard}>Dashboard</a>
