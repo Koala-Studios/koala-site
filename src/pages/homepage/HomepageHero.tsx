@@ -13,7 +13,7 @@ let homepageVideo = isMobile()
 const HomepageHero = () => {
   return (
     <div className={styles.hero_section}>
-      <section className={styles.hero_container}>
+      <section className={`${styles.hero_container} ${styles.hero_homepage}`}>
         <div className={styles.hero_video}>
           {/* <img src="/images/koala_square.png" /> */}
           <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
