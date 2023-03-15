@@ -32,9 +32,11 @@ interface Props {
 //     </div>
 //   );
 // };
-
+const isMobile = () => {
+  return window.outerWidth < 1024;
+};
 var options = {
-  damping: 0.11,
+  damping: isMobile() ? 0.08 : 0.11,
 };
 
 const ScrollContext: React.FC<Props> = ({ children }) => {
