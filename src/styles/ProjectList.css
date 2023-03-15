@@ -1,6 +1,6 @@
 .canvas {
     width:100%;
-
+    position: fixed;
     height:100%;
 }
 .canvas-container {

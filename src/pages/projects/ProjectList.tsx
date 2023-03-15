@@ -53,7 +53,7 @@ const ProjectList = () => {
       horizontal
       //   damping={50}
       pages={(width - xW + projects.length * xW) / width}
-      style={{ overflowX: "hidden" }}
+      // style={{ overflowX: "hidden" }}
     >
       <Scroll>
         {
