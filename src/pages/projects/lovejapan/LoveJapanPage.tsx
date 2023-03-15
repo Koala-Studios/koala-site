@@ -33,8 +33,6 @@ const LoveJapan = () => {
         alt={""}
         title={"About LoveJapan4Life"}
         subtitle={"Clothing & Apparel"}
-        width={"40%"}
-        height={""}
         imgStyles={{ borderRadius: "1.5rem", border: "2px solid #ede7e0" }}
       >
         <p>
@@ -85,18 +83,9 @@ const LoveJapan = () => {
       <h2 data-speed={1.1} style={{ color: "#ede7e0", fontSize: "2rem" }}> Our Results</h2>
 
       <div data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          display: "flex",
-          gap: 40,
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#ede7e0",
-          fontSize: 13,
-          marginTop: 50,
-          marginBottom: 80,
-        }}
+        className={styles.stat_badge_container}
       >
+      <div style={{display:'flex', gap:'inherit'}}>
         <StatBadge 
           LargeText="+159%"
           SmallText="Conversion Rate"
@@ -107,8 +96,11 @@ const LoveJapan = () => {
           SmallText="Sessions"
           UnderText={<div>From +100,000 Sessions</div>}
         />
-        <StatBadge dataLag={0.1} LargeText="+652%" SmallText="Revenue" />
-        <StatBadge dataLag={0.15} LargeText="16" SmallText="Ramens Consumed" />
+        </div>
+        <div style={{display:'flex', gap:'inherit'}}>
+          <StatBadge dataLag={0.1} LargeText="+652%" SmallText="Revenue" />
+          <StatBadge dataLag={0.15} LargeText="16" SmallText="Ramens Consumed" />
+        </div>
       </div>
       <TitleWithText orientation={"horizontal"} title={"Conclusion"}>
         <div

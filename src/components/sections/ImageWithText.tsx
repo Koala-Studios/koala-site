@@ -6,8 +6,8 @@ interface Props {
   alt: string;
   title: string;
   text?: string;
-  width: string;
-  height: string;
+  // width: string;
+  // height: string;
   children?: any;
   imgStyles?: any;
   styles?: any;
@@ -42,10 +42,9 @@ const ImageWithText: React.FC<Props> = (props) => {
       </div>
       <img
         style={props.imgStyles}
+        className={styles.image_with_text_image}
         src={props.src}
         alt={props.alt}
-        width={props.width}
-        height={props.height}
       />
     </section>
   );

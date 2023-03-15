@@ -26,10 +26,8 @@ const HomepagePage = () => {
         video_placement="right"
         src="/videos/cupcake_video.mp4"
         title=""
-        width="50%"
-        height="50%"
         loop
-        videoStyles={{ borderRadius: "1.5rem", border: "2px solid #d1bdad" }}
+        videoStyles={{ borderRadius: "1.5rem", border: "2px solid #d1bdad",  width:'50%', height:'50%', marginBottom:'25px' }} //marginBottom for mobile version + dataSpeed
         styles={{ backgroundColor: "#181A17" }}
         dataSpeed={1.2}
       >
@@ -45,8 +43,6 @@ const HomepagePage = () => {
         src="/videos/3dbag_in2.mp4"
         title="Your Website's Look Matters"
         text=""
-        width="40%"
-        height="40%"
         videoStyles={{ borderRadius: "1.5rem", border: "2px solid #282420" }}
         styles={{ backgroundColor: "#ede7e0" }}
         textColor="#282420"

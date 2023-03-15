@@ -66,9 +66,9 @@ const ProjectList = () => {
 
 const ProjectListContainer = () => {
   return (
-    <div className="canvas-container">
+    <div style={{width:'100vw'}} className="canvas-container">
       <TitleSection />
-      <Canvas camera={{ fov: 30, position: [0, 0, 30] }} className="canvas">
+      <Canvas style={{width:'100vw', overflowX:'hidden'}} camera={{ fov: 30, position: [0, 0, 30] }} className="canvas">
         <Environment preset="sunset" blur={0.5} />
         {/* <pointLight position={[15, 0, 5]} /> */}
         <ProjectList />
@@ -82,6 +82,7 @@ const TitleSection = () => {
 
   useEffect(() => {
     // setAnim(true);
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setAnim(true);
     }, 3100);
