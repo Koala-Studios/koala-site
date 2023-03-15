@@ -43,8 +43,6 @@ const AlloPage = () => {
         text={
           "Allo Nutrition is a Toronto-based company offering unique health products designed to enhance your everyday lifestyle. They have created the first protein powder that mixes seamlessly into hot coffee, with options for all types of coffee drinkers."
         }
-        width={"40%"}
-        height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >
         <div>
@@ -66,8 +64,6 @@ const AlloPage = () => {
         src={"../images/project/allo/hazelnut_creamer.webp"}
         alt={""}
         title={"How did we Help?"}
-        width={"40%"}
-        height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >
         <p>
@@ -89,22 +85,10 @@ const AlloPage = () => {
 
       <div
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          display: "flex",
-          gap: 40,
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#ede7e0",
-          fontSize: 13,
-          marginTop: 50,
-          marginBottom: 80,
-        }}
+        className={styles.stat_badge_container}
       >
-        <StatBadge
-          LargeText="4.02%"
-          SmallText="Conversion Rate"
-          UnderText={
+        <div style={{display:'flex', gap:'inherit'}}>
+        <StatBadge LargeText="4.02%" SmallText="Conversion Rate" UnderText={
             <Link
               target="_blank"
               to={
@@ -116,8 +100,12 @@ const AlloPage = () => {
           }
         />
         <StatBadge dataLag={0.05} LargeText="1 Year" SmallText="Since Launch" />
+        </div>
+
+        <div style={{display:'flex', gap:'inherit'}}>
         <StatBadge dataLag={0.1} LargeText="+300,000" SmallText="Sessions" />
         <StatBadge dataLag={0.15} LargeText="14" SmallText="Coffees Spilled" />
+        </div>
       </div>
       <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom: 50 }}>
         Featured
@@ -147,15 +135,7 @@ const AlloPage = () => {
       </p>
       <div
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          marginTop: 80,
-          marginBottom: 80,
-          width: "100%",
-          gap: 15,
-          display: "flex",
-          justifyContent: "space-between",
-        }}
+        className={styles.mobile_flex_images_allo}
       >
         <div data-lag={0.15}>
           <img

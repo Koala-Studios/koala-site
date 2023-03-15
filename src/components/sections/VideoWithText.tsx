@@ -5,8 +5,8 @@ interface Props {
   src: string;
   title: string;
   text?: string;
-  width: string;
-  height: string;
+  // width: string;
+  // height: string;
   children?: any;
   videoStyles?: any;
   styles?: any;
@@ -35,7 +35,7 @@ const observer = new IntersectionObserver(
 
 const VideoWithText: React.FC<Props> = (props) => {
   
-  const dataSpeed = props.dataSpeed ? props.dataSpeed : 1.1;
+  const dataSpeed = props.dataSpeed ? props.dataSpeed : 0;
   const videoRef = useRef<any>();
 
   useEffect(() => {
@@ -70,13 +70,14 @@ const VideoWithText: React.FC<Props> = (props) => {
         {props.children}
       </div>
       <video
+        className={styles.image_with_text_image}
         ref={videoRef}
         style={props.videoStyles}
         autoPlay
         loop={props.loop}
         muted
-        width={props.width}
-        height={props.height}
+        // width={props.width}
+        // height={props.height}
       >
         <source src={props.src} />
       </video>

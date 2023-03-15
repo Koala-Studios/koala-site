@@ -32,8 +32,6 @@ const StlthPage = () => {
         title={"Who is Stlth?"}
         subtitle={"E-cigarette"}
         loop={false}
-        width="40%"
-        height="40%"
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       >
         <p>
@@ -61,11 +59,10 @@ const StlthPage = () => {
         video_placement={"left"}
         src={"../images/project/stlth/stlth-usb.webm"}
         title={"How did we Help?"}
+        dataSpeed={0}
         text={
           "The mission of the redesign project was to ensure that the brand and website were in sync with each other. The client had a clear vision of their brand, but the previous website design failed to communicate that vision to its audience. "
         }
-        width={"40%"}
-        height={""}
         videoStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
       ></VideoWithText>
       <h2
@@ -201,8 +198,6 @@ const StlthPage = () => {
           text={
             "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
           }
-          width={"40%"}
-          height={""}
           imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
           dataSpeed={0.1}
         ></ImageWithText>

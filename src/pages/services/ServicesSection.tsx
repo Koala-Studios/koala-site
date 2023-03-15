@@ -32,8 +32,6 @@ const ServicesSection = () => {
         video_placement="right"
         src="/videos/3dbag_in2.mp4"
         title=""
-        width="40%"
-        height="40%"
         videoStyles={{ borderRadius: "1.5rem", border: "2px solid #282420" }}
         loop={false}
       >
@@ -64,8 +62,6 @@ const ServicesSection = () => {
         src="/images/retro_computer.jpg"
         alt="TODO"
         title=""
-        width="40%"
-        height="40%"
         imgStyles={{ borderRadius: "1.5rem" }}
       >
         <section className={styles.services_section}>

@@ -35,8 +35,6 @@ const ElikaiPage = () => {
         text={
           "Elikai is a company that produces household goods and decorations. They specialize in creating a wide range of products that are typically used in homes, such as office items, kitchenware, bathroom items, and more. Elikai sells exclusively on Amazon."
         }
-        width="40%"
-        height="40%"
         imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
         alt={""}
       ></ImageWithText>
@@ -46,8 +44,6 @@ const ElikaiPage = () => {
         src={"../images/project/elikai/shot3_less_contrast.jpg"}
         alt={""}
         title={"Our Role"}
-        width={"40%"}
-        height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >
         <p>

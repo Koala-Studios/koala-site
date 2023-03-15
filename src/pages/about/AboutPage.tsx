@@ -31,8 +31,6 @@ const AlloPage = () => {
         src={"../images/koala_square.png"}
         alt={""}
         title={"Our Mission"}
-        width={"40%"}
-        height={""}
         imgStyles={{ borderRadius: "1.5rem" }}
       >
         <p style={{ fontFamily: "Poppins-Regular" }}>
