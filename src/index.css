@@ -182,6 +182,6 @@ color: black;
 
 ::-webkit-scrollbar-thumb{
   border-radius: 10px;
-  background-color: rgb(99, 99, 99);
+  background-color: #0b0c0b;
   padding: 2;
 }

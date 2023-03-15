@@ -3,6 +3,9 @@
     position: fixed;
     height:100%;
 }
+
+
+
 .canvas-container {
 
     width:100vw;
@@ -43,7 +46,6 @@
 }
 
 .scroll-indicator{
-    margin-left: 1rem;
     text-align: center!important;
     position: fixed;
     width: 100%;
