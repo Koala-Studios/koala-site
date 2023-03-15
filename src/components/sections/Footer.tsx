@@ -36,9 +36,9 @@ const Footer: React.FC<Props> = (props) => {
             />
             <hr></hr>
             <p>
-              By leveraging our full spectrum strategy, design, and technology
-              capabilities, we deliver game-changing outcomes for our clients
-              around the world.
+              By leveraging our strategy, design, and technology capabilities,
+              we deliver game-changing outcomes for our clients around the
+              world.
             </p>
           </div>
           <div className={styles.links_section}>
