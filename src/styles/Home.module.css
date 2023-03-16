@@ -156,17 +156,7 @@
     animation: gradient 6s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 @media (max-width: 1600px) {
   .title {
@@ -177,6 +167,11 @@
 
 
 @media (max-width: 1024px) {
+  .box1_title{
+    text-align: center;
+  }
+  
+
   .grid {
     width: 100%;
     flex-direction: column;
@@ -190,15 +185,24 @@
   .hero_content{
     width: 100%;
     padding:5rem 0;
-
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+      text-align: center;
   }
 
   .hero_container{
     align-items:initial;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
+    padding-top: 2rem;
+    overflow-y: hidden;
   }
+
+  .hero_homepage{
+    height: 100vh;
+    justify-content: initial;
+  }
+  
 
   .hero_ctas{
     width: 100%;
@@ -219,6 +223,10 @@
   .hero_video{
     justify-content: center;
     margin-top: 0;
+  }
+
+  .hero_video video{
+    border-bottom-left-radius: 0;
   }
 
 }

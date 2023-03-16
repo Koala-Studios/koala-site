@@ -3,7 +3,9 @@
     transition: 300ms;
     z-index: 1000;
 }
-
+.contact_mobile{
+    display: none;
+}
 .logo:hover{
 transform: rotate(-5deg);
 }
@@ -78,7 +80,9 @@ background-color:var(--main-color);
         /* padding:2rem; */
         /* padding:var(--global-padding); */
     /* } */
-
+    .contact_mobile{
+        display: block;
+    }
    
     .links_container_buttons{
         display: none;

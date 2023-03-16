@@ -53,7 +53,7 @@ const ProjectList = () => {
       horizontal
       //   damping={50}
       pages={(width - xW + projects.length * xW) / width}
-      style={{ overflowX: "hidden" }}
+      // style={{ overflowX: "hidden" }}
     >
       <Scroll>
         {
@@ -66,9 +66,9 @@ const ProjectList = () => {
 
 const ProjectListContainer = () => {
   return (
-    <div style={{width:'100vw'}} className="canvas-container">
+    <div style={{ width: "100vw" }} className="canvas-container">
       <TitleSection />
-      <Canvas style={{width:'100vw', overflowX:'hidden'}} camera={{ fov: 30, position: [0, 0, 30] }} className="canvas">
+      <Canvas camera={{ fov: 30, position: [0, 0, 30] }} className="canvas">
         <Environment preset="sunset" blur={0.5} />
         {/* <pointLight position={[15, 0, 5]} /> */}
         <ProjectList />

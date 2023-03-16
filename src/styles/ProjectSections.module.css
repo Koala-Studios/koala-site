@@ -135,7 +135,7 @@
 }
 
 .scroll_indicator{
-    margin-left: 1rem;
+    margin-left: 0;
     text-align: center!important;
     position: fixed;
     width: 100%;
@@ -326,6 +326,14 @@ cursor: pointer;
 }
 
 
+@media (max-width: 1024px) {
+    .hero_container{
+        height: 70vh;
+    }
+    .hero_container h1{
+        font-size: 1.8rem;
+    }
+}
 @media (max-width: 875px) {
 
     .stat_badge {

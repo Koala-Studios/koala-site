@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import styles from "../../styles/Home.module.css";
 
+const isMobile = () => {
+  return window.outerWidth < 500;
+};
+let homepageVideo = isMobile()
+  ? "/videos/koalavideo2_60fps.mp4"
+  : "/videos/koala_wide.mp4";
+
 const HomepageHero = () => {
   return (
     <div className={styles.hero_section}>
-      <section className={styles.hero_container}>
+      <section className={`${styles.hero_container} ${styles.hero_homepage}`}>
         <div className={styles.hero_video}>
           {/* <img src="/images/koala_square.png" /> */}
           <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
-            <source src="/videos/koala_wide.mp4" />
+            <source src={homepageVideo} />
           </video>
         </div>
         <div className={styles.hero_content}>

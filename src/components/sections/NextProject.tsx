@@ -9,8 +9,6 @@ const NextProject: React.FC<Props> = (props) => {
   return (
     <section className={`${styles.next_project}`}>
       <Link to={`${props.next_link}`}>Next Project</Link>
-
-      <Link style={{fontSize:'15px', textDecoration:'underline'}} to="/projects">View All Projects</Link>
     </section>
   );
 };

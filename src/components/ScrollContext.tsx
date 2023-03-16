@@ -32,9 +32,11 @@ interface Props {
 //     </div>
 //   );
 // };
-
+const isMobile = () => {
+  return window.outerWidth < 1024;
+};
 var options = {
-  damping: 0.11,
+  damping: isMobile() ? 0.08 : 0.11,
 };
 
 const ScrollContext: React.FC<Props> = ({ children }) => {
@@ -47,41 +49,41 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
     const scrollbar = Scrollbar.init(smoother.current, options);
     scrollbar.scrollTo(0, 0);
 
-    const dataSpeedEls = smoother.current.querySelectorAll(
-      "[data-speed]:not([data-value='0']"
-    );
+    // const dataSpeedEls = smoother.current.querySelectorAll(
+    //   "[data-speed]:not([data-value='0']"
+    // );
 
-    console.log(dataSpeedEls);
-    for (let i = 0; i < dataSpeedEls.length; i++) {
-      const el = dataSpeedEls[i];
-      el.style.transitionDuration = "100ms";
-    }
+    // console.log(dataSpeedEls);
+    // for (let i = 0; i < dataSpeedEls.length; i++) {
+    //   const el = dataSpeedEls[i];
+    //   el.style.transitionDuration = "100ms";
+    // }
 
     //@ts-ignore
-    navigator.getBattery().then(function (battery) {
-      if (battery.charging && battery.chargingTime === 0) {
-        console.log("desktop");
+    // navigator.getBattery().then(function (battery) {
+    // if (battery.charging && battery.chargingTime === 0) {
+    //     console.log("desktop");
 
-        scrollbar.addListener((scroll: ScrollStatus) => {
-          for (let i = 0; i < dataSpeedEls.length; i++) {
-            const el = dataSpeedEls[i];
-            const dataSpeed = el.getAttribute("data-speed");
-            const rect = el.getBoundingClientRect();
-            // console.log(rect.top - scroll.offset.y);
-            el.style.transform = `translateY(${
-              dataSpeed * ((rect.bottom - scroll.offset.y) / 40)
-            }px)`;
-          }
-        });
-      } else {
-        console.log("not desktop");
-        return;
-      }
-    });
+    //     scrollbar.addListener((scroll: ScrollStatus) => {
+    //       for (let i = 0; i < dataSpeedEls.length; i++) {
+    //         const el = dataSpeedEls[i];
+    //         const dataSpeed = el.getAttribute("data-speed");
+    //         const rect = el.getBoundingClientRect();
+    //         // console.log(rect.top - scroll.offset.y);
+    //         el.style.transform = `translateY(${
+    //           dataSpeed * ((rect.bottom - scroll.offset.y) / 40)
+    //         }px)`;
+    //       }
+    //     });
+    //   } else {
+    //     console.log("not desktop");
+    //     return;
+    //   }
+    // });
   }, [location.key]);
 
   return (
-    <div style={{ height: "100vh" }} ref={smoother}>
+    <div style={{ height: "100vh", maxWidth: "100vw" }} ref={smoother}>
       <div>{children}</div>
     </div>
   );
