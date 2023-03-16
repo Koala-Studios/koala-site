@@ -167,6 +167,11 @@ margin-right: 2rem;
 
 @media (max-width: 1023px) {
 
+    .next_project {
+        font-size:4rem;
+
+    }
+
     .image_with_text_container{
         padding:var(--global-padding);
         /* align-items: unset; */

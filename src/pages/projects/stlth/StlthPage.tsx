@@ -9,6 +9,7 @@ import ProjectHero from "../../../components/sections/ProjectHero";
 import ScrollingText from "../../../components/sections/ScrollingText";
 import TitleWithText from "../../../components/sections/TitleWithText";
 import VideoWithText from "../../../components/sections/VideoWithText";
+import styles from "../../../styles/ProjectSections.module.css";
 
 const StlthPage = () => {
   return (
@@ -74,11 +75,7 @@ const StlthPage = () => {
       </h2>
       <video
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          maxHeight: "90vh",
-          marginBottom: 50,
-        }}
+        className={styles.stlth_results_video}
         loop
         autoPlay
         muted
@@ -93,15 +90,7 @@ const StlthPage = () => {
       </h2>
       <div
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          marginTop: 25,
-          marginBottom: 150,
-          gap: 15,
-          display: "flex",
-          justifyContent: "left",
-          height: "80vh",
-        }}
+        className={styles.stlth_before_and_after_left}
       >
         <div>
           <img
@@ -126,24 +115,16 @@ const StlthPage = () => {
 
       <div
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          marginTop: 25,
-          marginBottom: 150,
-          gap: 30,
-          display: "flex",
-          justifyContent: "right",
-          height: "80vh",
-        }}
+        className={styles.stlth_before_and_after_right}
       >
         <div>
           <img
             style={{
-              height: "100%",
+              height:"100%",
               border: "2px solid #ffffff36",
               borderRadius: "30px",
             }}
-            src="..\images\project\stlth\stlth-menu.png"
+            src="..\images\project\stlth\stlth-menu-old.png"
           ></img>
 
           <p style={{ color: "#ede7e0", marginTop: 15 }}> Old Menu</p>
@@ -159,15 +140,7 @@ const StlthPage = () => {
 
       <div
         data-speed={1.1}
-        style={{
-          padding: "var(--global-padding)",
-          marginTop: 25,
-          marginBottom: 150,
-          gap: 30,
-          display: "flex",
-          justifyContent: "left",
-          height: "80vh",
-        }}
+        className={styles.stlth_before_and_after_left}
       >
         <div>
           <img

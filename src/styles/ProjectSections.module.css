@@ -14,6 +14,40 @@
  border-radius: 0.5rem;
 }
 
+.stlth_results_video {
+    padding: var(--global-padding);
+    max-width:100vw;
+    max-height: 90vh;
+    margin-bottom: 50px;
+}
+
+.stlth_before_and_after_left {
+    padding: var(--global-padding);
+    margin-top: 25px;
+    margin-bottom: 150px;
+    gap: 15px;
+    display: flex;
+    justify-content: left;
+    height: 80vh;
+    maxWidth:100vw;
+    width:100vw;
+}
+
+
+.stlth_before_and_after_right {
+    padding: var(--global-padding);
+    margin-top: 25px;
+    margin-bottom: 150px;
+    gap: 15px;
+    display: flex;
+    justify-content: right;
+    height: 80vh;
+    maxWidth:100vw;
+    width:100vw;
+}
+
+
+
 .title_image{
     /* height: 100%; */
     /* width: auto; */
@@ -251,6 +285,43 @@ cursor: pointer;
     .mobile_flex_images_allo {
         margin-top: 120px;
         margin-bottom:40px;
+    }
+
+    .stlth_before_and_after_left { 
+        height:fit-content;
+        justify-content: center!important;
+        margin-bottom: 20px;
+    }
+
+    .stlth_before_and_after_left p {
+        font-size: 1rem; 
+    }
+    .stlth_before_and_after_right p {
+        font-size: 1rem; 
+    }
+
+    .stlth_before_and_after_right{ 
+        height:fit-content;
+        justify-content: center!important;
+        margin-bottom: 20px;
+    }
+
+    .stlth_before_and_after_left div { 
+        height:fit-content;
+    }
+    .stlth_before_and_after_right div { 
+        height:fit-content;
+    }
+
+    .stlth_before_and_after_left img {
+        height:unset!important;
+        max-height:70vh!important;
+        max-width:40vw;
+    }
+    .stlth_before_and_after_right img {
+        height:unset!important;
+        max-height:70vh!important;
+        max-width:40vw;
     }
 }
 
