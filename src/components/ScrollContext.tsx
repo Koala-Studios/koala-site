@@ -39,14 +39,21 @@ var options = {
   damping: isMobile() ? 0.08 : 0.11,
 };
 
+let scrollbar: Scrollbar;
+
 const ScrollContext: React.FC<Props> = ({ children }) => {
   const location = useLocation();
   const smoother = useRef<any>();
 
   useEffect(() => {
-    if (!smoother.current) return;
-    console.log("hello");
-    const scrollbar = Scrollbar.init(smoother.current, options);
+    if (isMobile() || !smoother.current) return;
+    scrollbar = Scrollbar.init(smoother.current, options);
+    scrollbar.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile() || !smoother.current) return;
+    // const scrollbar = Scrollbar.init(smoother.current, options);
     scrollbar.scrollTo(0, 0);
 
     // const dataSpeedEls = smoother.current.querySelectorAll(
@@ -81,6 +88,10 @@ const ScrollContext: React.FC<Props> = ({ children }) => {
     //   }
     // });
   }, [location.key]);
+
+  if (isMobile()) {
+    return <div>{children}</div>;
+  }
 
   return (
     <div style={{ height: "100vh", maxWidth: "100vw" }} ref={smoother}>

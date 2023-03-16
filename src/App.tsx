@@ -22,6 +22,7 @@ import StlthPage from "./pages/projects/stlth/StlthPage";
 import LoveJapanPage from "./pages/projects/lovejapan/LoveJapanPage";
 import ElikaiPage from "./pages/projects/elikai/ElikaiPage";
 import ScrollContext from "./components/ScrollContext";
+import GalleryPage from "./pages/gallery/GalleryPage";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
         </ScrollContext>
       </BrowserRouter>
