@@ -119,6 +119,7 @@ button{
   display: flex;
   gap: 10px;
   border: none; 
+  white-space: nowrap!important;
   /* perspective:1px; */
 }
 .btn:hover {

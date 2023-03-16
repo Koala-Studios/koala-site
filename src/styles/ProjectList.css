@@ -123,3 +123,32 @@
         opacity: 0;
     }
 }
+
+@media (max-width: 1024px) {
+.title-section{
+ justify-content: start;
+ padding-left: 2rem;
+ padding-right: 2rem;
+ padding-top: 4rem;
+width: 100%;
+}
+
+.title-el{
+ font-size: 2rem;
+ width: 100%;
+}
+
+    @keyframes scroll-wheel-anim {
+        0%{
+            transform: translateX(15px);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 0;
+        }
+    }
+    }

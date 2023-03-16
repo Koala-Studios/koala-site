@@ -64,11 +64,18 @@ const ProjectList = () => {
   );
 };
 
+const isMobile = () => {
+  return window.outerWidth < 1024;
+};
+
 const ProjectListContainer = () => {
   return (
     <div style={{ width: "100vw" }} className="canvas-container">
       <TitleSection />
-      <Canvas camera={{ fov: 30, position: [0, 0, 30] }} className="canvas">
+      <Canvas
+        camera={{ fov: 30, position: [0, 0, isMobile() ? 37 : 30] }}
+        className="canvas"
+      >
         <Environment preset="sunset" blur={0.5} />
         {/* <pointLight position={[15, 0, 5]} /> */}
         <ProjectList />
@@ -98,7 +105,7 @@ const TitleSection = () => {
         </h1>
       </div>
       <div className="scroll-indicator">
-        <p>Scroll to Discover</p>
+        <p>{isMobile() ? "Swipe" : "Scroll"} to Discover</p>
         <div className="scroll-wheel "></div>
       </div>
     </div>

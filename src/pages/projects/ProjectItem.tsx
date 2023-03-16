@@ -19,6 +19,10 @@ interface Props {
 let startAnimDone = false;
 let pointerPos = [0, 0];
 
+const isMobile = () => {
+  return window.outerWidth < 1024;
+};
+
 const ProjectItem: React.FC<Props> = ({
   logo,
   xpos,
@@ -72,7 +76,7 @@ const ProjectItem: React.FC<Props> = ({
           },
         })
         .to(ref.current.position, {
-          y: 0.5,
+          y: isMobile() ? -0.2 : 0.5,
           duration: 2,
           ease: Power2.easeOut,
         })
@@ -143,6 +147,8 @@ const ProjectItem: React.FC<Props> = ({
     }
   });
 
+  const logoSize = isMobile() ? 2.5 : 1.6;
+
   return (
     <>
       <mesh
@@ -170,9 +176,11 @@ const ProjectItem: React.FC<Props> = ({
       <mesh
         //@ts-ignore
         ref={refText}
-        position={[xpos, -5.35, 1]}
+        position={[xpos, isMobile() ? -6.4 : -5.35, 1]}
       >
-        <planeBufferGeometry args={[1.6 * 1.5, 1.6]}></planeBufferGeometry>
+        <planeBufferGeometry
+          args={[logoSize * 1.5, logoSize]}
+        ></planeBufferGeometry>
         <meshStandardMaterial
           opacity={0}
           envMapIntensity={2.5}
