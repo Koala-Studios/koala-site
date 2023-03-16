@@ -259,7 +259,9 @@ cursor: pointer;
 
 @media (max-width: 1400px) {
     
-
+    .title_image{
+        height: 100%;
+    }
     
     .stat_badge_container {
         gap:20px!important;
@@ -333,6 +335,7 @@ cursor: pointer;
     .hero_container h1{
         font-size: 1.8rem;
     }
+    
 }
 @media (max-width: 875px) {
 

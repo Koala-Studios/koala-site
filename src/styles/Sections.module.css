@@ -229,3 +229,12 @@ margin-right: 2rem;
     }
 
 }
+
+@media (max-width: 330px) {
+
+    .next_project {
+        font-size:3rem;
+
+    }
+
+}
