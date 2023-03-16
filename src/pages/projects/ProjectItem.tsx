@@ -17,6 +17,7 @@ interface Props {
   handle: string;
 }
 let startAnimDone = false;
+let pointerPos = [0, 0];
 
 const ProjectItem: React.FC<Props> = ({
   logo,
@@ -112,12 +113,21 @@ const ProjectItem: React.FC<Props> = ({
     });
     document.body.style.cursor = "initial";
   };
-  const handlePointerDown = () => {
-    navigate(handle);
+  const handlePointerDown = (event: ThreeEvent<PointerEvent>) => {
+    // navigate(handle);
+    pointerPos = [event.clientX, event.clientY];
+  };
+  const handlePointerUp = (event: ThreeEvent<PointerEvent>) => {
+    if (
+      Math.abs(event.clientX - pointerPos[0]) < 10 &&
+      Math.abs(event.clientY - pointerPos[1]) < 10
+    ) {
+      document.body.style.cursor = "initial";
+      navigate(handle);
+    }
   };
 
-  const handleAwake = () => {
-  };
+  const handleAwake = () => {};
 
   useFrame(({ scene, camera }) => {
     if (startAnimDone && ref.current) {
@@ -143,6 +153,7 @@ const ProjectItem: React.FC<Props> = ({
         onPointerLeave={handlePointerLeave}
         onPointerMove={handlePointerMove}
         onPointerDown={handlePointerDown}
+        onPointerUp={handlePointerUp}
         geometry={obj}
         //@ts-ignore
         scale={scale}
