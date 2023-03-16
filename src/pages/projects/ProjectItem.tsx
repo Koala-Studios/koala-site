@@ -147,7 +147,7 @@ const ProjectItem: React.FC<Props> = ({
     }
   });
 
-  const logoSize = isMobile() ? 2.5 : 1.6;
+  const logoSize = isMobile() ? 2.2 : 1.6;
 
   return (
     <>
