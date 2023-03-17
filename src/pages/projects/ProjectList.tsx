@@ -65,7 +65,7 @@ const ProjectList = () => {
 };
 
 const isMobile = () => {
-  return window.outerWidth < 1024;
+  return window.innerWidth < 1024;
 };
 
 const ProjectListContainer = () => {

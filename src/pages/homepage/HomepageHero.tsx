@@ -1,23 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import styles from "../../styles/Home.module.css";
 
 const isMobile = () => {
-  return window.outerWidth < 500;
+  return window.innerWidth < 500;
 };
 let homepageVideo = isMobile()
   ? "/videos/koalavideo2_60fps.mp4"
   : "/videos/koala_wide.mp4";
 
 const HomepageHero = () => {
+  const [mobile, setMobile] = useState(isMobile());
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      console.log("Resize");
+      setMobile(isMobile());
+    });
+  }, []);
+
   return (
     <div className={styles.hero_section}>
       <section className={`${styles.hero_container} ${styles.hero_homepage}`}>
         <div className={styles.hero_video}>
           {/* <img src="/images/koala_square.png" /> */}
           <video autoPlay loop muted style={{ width: "auto", height: "100%" }}>
-            <source src={homepageVideo} />
+            <source
+              src={
+                mobile
+                  ? "/videos/koalavideo2_60fps.mp4"
+                  : "/videos/koala_wide.mp4"
+              }
+            />
           </video>
         </div>
         <div className={styles.hero_content}>

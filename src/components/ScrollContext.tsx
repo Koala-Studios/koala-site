@@ -33,7 +33,7 @@ interface Props {
 //   );
 // };
 const isMobile = () => {
-  return window.outerWidth < 1024;
+  return window.innerWidth < 1024;
 };
 var options = {
   damping: isMobile() ? 0.08 : 0.11,

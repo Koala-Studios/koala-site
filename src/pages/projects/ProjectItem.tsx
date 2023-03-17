@@ -20,7 +20,7 @@ let startAnimDone = false;
 let pointerPos = [0, 0];
 
 const isMobile = () => {
-  return window.outerWidth < 1024;
+  return window.innerWidth < 1024;
 };
 
 const ProjectItem: React.FC<Props> = ({
