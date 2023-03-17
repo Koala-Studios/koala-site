@@ -1,14 +1,14 @@
 {
     "groups":[
     {
-        "title":"Allo",
+        "title":"Allo Renders",
         "images":[
             {
                 "caption":"afdada",
                 "url":"/images/koala_square.png"
             },{
                 "caption":"afdada",
-                "url":"/images/koala_square.png"
+                "url":"/images/project/allo_list.webp"
             },{
                 "caption":"afdada",
                 "url":"/images/koala_square.png"
@@ -22,12 +22,31 @@
         ]
     },
     {
-        "title":"asddfg",
+        "title":"STLTH Renders",
         "images":[
             {
                 "caption":"afdada",
                 "url":"/images/koala_square.png"
             }
         ]
-    }]
+    },
+    {
+        "title":"ELIKAI Renders",
+        "images":[
+            {
+                "caption":"afdada",
+                "url":"/images/koala_square.png"
+            }
+        ]
+    },
+    {
+        "title":"Misc. Renders",
+        "images":[
+            {
+                "caption":"afdada",
+                "url":"/images/koala_square.png"
+            }
+        ]
+    }
+]
 }
