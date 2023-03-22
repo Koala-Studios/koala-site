@@ -36,7 +36,9 @@ const GradientHero: React.FC<Props> = (props) => {
             background: props.gradient,
           }}
           className={styles.hero_gradient}
-        ></div>
+        >
+          <div className={styles.gradient_bg}></div>
+        </div>
         <div className={styles.hero_content}>
           <h1 className={styles.title}>{props.title}</h1>
         </div>

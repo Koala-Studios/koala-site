@@ -14,7 +14,7 @@ import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import { useLoader } from "@react-three/fiber";
 
 const projects = ProjectFile.projects;
-const title = "Featured| work|";
+const title = "Featured| Work|";
 
 const ProjectList = () => {
   const image_plate = useLoader(OBJLoader, "/objects/image_plate_mesh.obj");
