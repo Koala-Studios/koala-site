@@ -49,7 +49,7 @@ background-color:var(--main-color);
 
 .links_container a {
     white-space: nowrap!important;
-
+    line-height: 1;
     padding: 0.5rem 1rem;
     transition: 300ms;
     border-radius: .1rem;

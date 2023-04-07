@@ -31,7 +31,7 @@ const Footer: React.FC<Props> = (props) => {
             <img
               alt="Koala Studios Logo"
               src="/images/koala_logo_white.png"
-              width={105.6}
+              width={106}
               height={20}
             />
             <hr></hr>
@@ -41,6 +41,7 @@ const Footer: React.FC<Props> = (props) => {
               world.
             </p>
           </div>
+
           <div className={styles.links_section}>
             <div>
               <h3>Links</h3>

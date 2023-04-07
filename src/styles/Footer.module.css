@@ -47,8 +47,8 @@
    margin-bottom: 1.5rem;
 }
 .footer_info_container img{
-   padding-top: 1rem!important;
-   padding-bottom: 1rem!important;
+   margin-top: 1rem!important;
+   margin-bottom: 1rem!important;
 }
 .footer_info_container hr{
     width: 5rem;

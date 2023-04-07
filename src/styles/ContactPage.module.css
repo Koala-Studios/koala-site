@@ -3,6 +3,16 @@
     max-width: 50%;
 }
 
+.calendly_section{
+  height: 80vh;
+  overflow-y: hidden;
+  background-color: #39744f;
+  display: flex;
+  width: 100%;
+}
+
+
+
 .form_container {
   padding: var(--global-padding);
   width: 100%;

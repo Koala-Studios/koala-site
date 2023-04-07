@@ -7,9 +7,11 @@ interface Props {
 
 const NextProject: React.FC<Props> = (props) => {
   return (
-    <section className={`${styles.next_project}`}>
-      <Link to={`${props.next_link}`}>Next Project</Link>
-    </section>
+    <Link to={`${props.next_link}`}>
+      <section className={`${styles.next_project}`}>
+        <div>Next Project</div>
+      </section>
+    </Link>
   );
 };
 

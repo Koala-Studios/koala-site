@@ -95,11 +95,11 @@
     align-items: center;
 }
 
-.next_project a {
+.next_project div {
     transform: rotateY(0);
     transition: 300ms;
 }
-.next_project:hover a {
+.next_project:hover div {
     transform: rotateZ(-3deg);
 }
 

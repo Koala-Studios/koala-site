@@ -88,10 +88,7 @@ const StlthPage = () => {
       >
         Before and After
       </h2>
-      <div
-        data-speed={1.1}
-        className={styles.stlth_before_and_after_left}
-      >
+      <div data-speed={1.1} className={styles.stlth_before_and_after_left}>
         <div>
           <img
             style={{
@@ -113,14 +110,11 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
-        data-speed={1.1}
-        className={styles.stlth_before_and_after_right}
-      >
+      <div data-speed={1.1} className={styles.stlth_before_and_after_right}>
         <div>
           <img
             style={{
-              height:"100%",
+              height: "100%",
               border: "2px solid #ffffff36",
               borderRadius: "30px",
             }}
@@ -138,10 +132,7 @@ const StlthPage = () => {
         </div>
       </div>
 
-      <div
-        data-speed={1.1}
-        className={styles.stlth_before_and_after_left}
-      >
+      <div data-speed={1.1} className={styles.stlth_before_and_after_left}>
         <div>
           <img
             style={{
@@ -169,7 +160,7 @@ const StlthPage = () => {
           image_placement={"right"}
           title={"Client Success"}
           text={
-            "The Solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
+            "The solution was to focus on the brand's values while enhancing the customer experience through the elimination of inconsistencies, improving calls to action, and making the website more polished and user-friendly."
           }
           imgStyles={{ border: "1px #ffffff36 solid", borderRadius: "1.5rem" }}
           dataSpeed={0.1}
