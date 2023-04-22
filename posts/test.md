@@ -6,9 +6,7 @@ thumbnail: /images/uploads/koala_frame.jpg
 ---
 # This is just a test postsad
 
-
-
-s﻿
+s﻿asdfas
 
 d﻿
 
