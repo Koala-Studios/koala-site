@@ -10,6 +10,4 @@ s﻿asdfas
 
 d﻿
 
-
-
-*Let's see what happens.sdafads*
+*Let's see what happens.sdafads this is me typing right now at the moment (daniel) daniel is typing (I'm typing)*
