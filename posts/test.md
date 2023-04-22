@@ -8,6 +8,6 @@ thumbnail: /images/uploads/koala_frame.jpg
 
 s﻿asdfas
 
-d﻿
+`d﻿s sdafdsaf dafd af`
 
-*Let's see what happens.sdafads this is me typing right now at the moment (daniel) daniel is typing (I'm typing)*
+*`Let's see what happens.sdafads this is me typing right now at the mom`ent (daniel) daniel is typing (I'm typing)*
