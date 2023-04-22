@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  # repo: Koala-Studios/koala-site
   branch: main # Branch to update (optional; defaults to master)
 
 # These lines should *not* be indented
