@@ -18,7 +18,7 @@ const AlloPage = () => {
         project={project}
         title={
           <h1>
-            Protein Podwer <br />
+            Protein Powder <br />
             For Hot Coffee
           </h1>
         }
@@ -83,28 +83,36 @@ const AlloPage = () => {
         Our Results
       </h2>
 
-      <div
-        data-speed={1.1}
-        className={styles.stat_badge_container}
-      >
-        <div style={{display:'flex', gap:'inherit'}}>
-        <StatBadge LargeText="4.02%" SmallText="Conversion Rate" UnderText={
-            <Link
-              target="_blank"
-              to={
-                "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
-              }
-            >
-              (vs 2022 Shopify Avg 1.4%)
-            </Link>
-          }
-        />
-        <StatBadge dataLag={0.05} LargeText="1 Year" SmallText="Since Launch" />
+      <div data-speed={1.1} className={styles.stat_badge_container}>
+        <div style={{ display: "flex", gap: "inherit" }}>
+          <StatBadge
+            LargeText="4.02%"
+            SmallText="Conversion Rate"
+            UnderText={
+              <Link
+                target="_blank"
+                to={
+                  "https://lp.littledata.io/average/ecommerce-conversion-rate-(all-devices)/Shopify"
+                }
+              >
+                (vs 2022 Shopify Avg 1.4%)
+              </Link>
+            }
+          />
+          <StatBadge
+            dataLag={0.05}
+            LargeText="1 Year"
+            SmallText="Since Launch"
+          />
         </div>
 
-        <div style={{display:'flex', gap:'inherit'}}>
-        <StatBadge dataLag={0.1} LargeText="+300,000" SmallText="Sessions" />
-        <StatBadge dataLag={0.15} LargeText="14" SmallText="Coffees Spilled" />
+        <div style={{ display: "flex", gap: "inherit" }}>
+          <StatBadge dataLag={0.1} LargeText="+300,000" SmallText="Sessions" />
+          <StatBadge
+            dataLag={0.15}
+            LargeText="14"
+            SmallText="Coffees Spilled"
+          />
         </div>
       </div>
       <h2 style={{ color: "#ede7e0", marginTop: 60, marginBottom: 50 }}>
@@ -133,10 +141,7 @@ const AlloPage = () => {
       <p style={{ color: "#ede7e0", marginBottom: 50 }}>
         Scrolling video in home page
       </p>
-      <div
-        data-speed={1.1}
-        className={styles.mobile_flex_images_allo}
-      >
+      <div data-speed={1.1} className={styles.mobile_flex_images_allo}>
         <div data-lag={0.15}>
           <img
             style={{ borderRadius: "1rem", width: "100%" }}
