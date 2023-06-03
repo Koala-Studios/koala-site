@@ -76,7 +76,11 @@ const ProjectListContainer = () => {
         camera={{ fov: 30, position: [0, 0, isMobile() ? 37 : 30] }}
         className="canvas"
       >
-        <Environment preset="sunset" blur={0.5} />
+        <Environment
+          path="/images/project/"
+          files="venice_sunset_1k.hdr"
+          blur={0.5}
+        />
         {/* <pointLight position={[15, 0, 5]} /> */}
         <ProjectList />
       </Canvas>
