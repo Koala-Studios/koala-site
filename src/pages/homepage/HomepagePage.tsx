@@ -7,6 +7,7 @@ import Footer from "../../components/sections/Footer";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import VideoWithText from "../../components/sections/VideoWithText";
+import Testimonials from "../../components/sections/Testimonials";
 
 const HomepagePage = () => {
   return (
@@ -27,7 +28,13 @@ const HomepagePage = () => {
         src="/videos/cupcake_video.mp4"
         title=""
         loop
-        videoStyles={{ borderRadius: "1.5rem", border: "2px solid #d1bdad",  width:'50%', height:'50%', marginBottom:'25px' }} //marginBottom for mobile version + dataSpeed
+        videoStyles={{
+          borderRadius: "1.5rem",
+          border: "2px solid #d1bdad",
+          width: "50%",
+          height: "50%",
+          marginBottom: "25px",
+        }} //marginBottom for mobile version + dataSpeed
         styles={{ backgroundColor: "#181A17" }}
         dataSpeed={1.2}
       >
@@ -85,6 +92,8 @@ const HomepagePage = () => {
           </Link>
         </div>
       </VideoWithText>
+
+      <Testimonials />
       <Footer />
     </div>
   );

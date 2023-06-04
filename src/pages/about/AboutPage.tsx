@@ -8,6 +8,7 @@ import { hover } from "@testing-library/user-event/dist/hover";
 import Footer from "../../components/sections/Footer";
 import { Link } from "react-router-dom";
 import GradientHero from "../../components/sections/GradientHero";
+import FAQ from "../../components/sections/FAQ";
 const AlloPage = () => {
   return (
     <div style={{ backgroundColor: "#181A17", overflowX: "hidden" }}>
@@ -84,6 +85,8 @@ const AlloPage = () => {
           </Button>
         </Link>
       </div>
+
+      <FAQ />
       <Footer></Footer>
     </div>
   );
